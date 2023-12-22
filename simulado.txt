@@ -1,0 +1,92 @@
+3.1 - Exercícios
+
+Exercício 1:
+
+class Test {
+    public static void main(String[] args) {
+        for (int i = 0; i < 20; i++) {
+            System.out.println(i);
+        }
+        System.out.println(i);
+    }
+}
+
+a - Erro de compilação.
+b - Compila e roda, imprimindo de 0 até 19 e depois 19.
+c - Compila e roda, imprimindo de 0 até 19, depois ocorre um erro de execução.
+
+----------------------------------------------------------------------------------------------
+
+Exercício 2:
+
+class Test {
+    public static void main(String[] args) {
+        for (int i = 0; i < 20; i++)
+            System.out.println(i);
+        System.out.println(i);
+    }
+}
+
+a - Erro de compilação.
+b - Compila e roda, imprimindo de 0 até 19 e depois 19.
+c - Compila e roda, imprimindo de 0 até 19, depois 19, depois finished.
+d - Compila e roda, imprimindo de 0 até 19, depois ocorre um erro de execução.
+
+----------------------------------------------------------------------------------------------
+
+Exercício 3:
+
+class Test {
+    public static void main(String[] args) {
+        for (int i = 0; i < 20; i++) {
+            System.out.println(i);
+        }
+        int i = 15;
+        System.out.println(i);
+    }
+}
+
+a - Erro de compilação na linha 6. A variável i não pode ser redeclarada.
+b - Erro de compilação na linha 7. A variável i é ambígua.
+c - Compila e roda, imprimindo de 0 até 19 e depois 15.
+d - Compila e roda, imprimindo de 0 até 19, depois ocorre um erro de execução na linha 6.
+e - Compila e roda, imprimindo de 0 até 19 e depois 19 novamente.
+
+----------------------------------------------------------------------------------------------
+
+Exercício 4:
+
+class Test {
+    static int x = 15;
+    public static void main(String[] x) {
+        x = 200;
+        System.out.println(x);
+    }
+}
+
+a - O código compila e roda, imprimindo 200.
+b - O código compila e roda, imprimindo 15.
+c - O código não compila.
+d - O código compila mas dá erro em execução.
+
+----------------------------------------------------------------------------------------------
+
+Exercício 5:
+
+class Test {
+    static int i = 3;
+    public static void main(String[] a) {
+        for (new Test().i = 10; new Test().i < 100; new Test().i++) {
+            System.out.println(i);
+        }
+    }
+}
+
+a - Não compila a linha 4.
+b - Não compila a linha 5.
+c - Compila e imprime 100 vezes o número 3.
+d - Compila e imprime os números de 10 até 99.
+
+----------------------------------------------------------------------------------------------
+
+
