@@ -15,7 +15,7 @@ a - Erro de compilação.
 b - Compila e roda, imprimindo de 0 até 19 e depois 19.
 c - Compila e roda, imprimindo de 0 até 19, depois ocorre um erro de execução.
 
-----------------------------------------------------------------------------------------------
+
 
 Exercício 2:
 
@@ -32,7 +32,7 @@ b - Compila e roda, imprimindo de 0 até 19 e depois 19.
 c - Compila e roda, imprimindo de 0 até 19, depois 19, depois finished.
 d - Compila e roda, imprimindo de 0 até 19, depois ocorre um erro de execução.
 
-----------------------------------------------------------------------------------------------
+
 
 Exercício 3:
 
@@ -52,7 +52,7 @@ c - Compila e roda, imprimindo de 0 até 19 e depois 15.
 d - Compila e roda, imprimindo de 0 até 19, depois ocorre um erro de execução na linha 6.
 e - Compila e roda, imprimindo de 0 até 19 e depois 19 novamente.
 
-----------------------------------------------------------------------------------------------
+
 
 Exercício 4:
 
@@ -69,7 +69,7 @@ b - O código compila e roda, imprimindo 15.
 c - O código não compila.
 d - O código compila mas dá erro em execução.
 
-----------------------------------------------------------------------------------------------
+
 
 Exercício 5:
 
@@ -87,6 +87,1719 @@ b - Não compila a linha 5.
 c - Compila e imprime 100 vezes o número 3.
 d - Compila e imprime os números de 10 até 99.
 
-----------------------------------------------------------------------------------------------
 
 
+
+3.2 - Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir
+sem nenhum parâmetro na linha de comando, como java D:
+
+package a.b.c;
+
+import java.util.*;
+
+class D {
+    public static void main(String[] args) {
+        ArrayList<String> existing = new ArrayList<String>();
+
+        for (String arg : args) {
+            if (new E().exists(arg))
+                existing.add(arg);
+        }
+    }
+}
+
+import java.io.*;
+
+class E {
+    public boolean exists(String name) {
+        File f = new File(name);
+        return f.exists();
+    }
+}
+
+a) O arquivo não compila.
+b) O arquivo compila mas dá erro de execução pois o array é nulo.
+c) O arquivo compila mas dá erro de execução pois o array tem tamanho zero.
+d) Roda e imprime false.
+e) Roda e imprime true.
+f) Roda e não imprime nada.
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class Test {
+    int Test = 305;
+
+    void Test() {
+        System.out.println(Test);
+    }
+
+    public static void main(String[] args) {
+        new Test();
+    }
+}
+
+a) O código não compila: erros nas linhas 2, 4, 5 e 6.
+b) O código não compila: erro na linha 5.
+c) O código não compila: erros nas linhas 2, 4 e 6.
+d) O código compila e, ao rodar, imprime 305.
+e) O código compila e não imprime nada.
+f) O código compila e, ao rodar, imprime uma linha em branco.
+
+
+3 - Escolha a opção adequada ao tentar compilar o arquivo a seguir:
+
+package br.com.teste;
+
+import java.util.ArrayList;
+
+a) Erro na linha 1: definimos o pacote mas nenhum tipo.
+b) Erro na linha 3: importamos algo desnecessário ao arquivo.
+c) Compila sem erros.
+
+4 - Escolha a opção adequada ao tentar compilar o arquivo A.java:
+
+class A implements B {
+}
+
+public interface B {
+}
+
+class C extends A {
+}
+
+class D extends A, implements B {
+}
+
+a) Não compila: erro na linha 7.
+b) Não compila: erro na linha 3.
+c) Não compila: erro na linha 1, 3 e 7.
+d) Não compila: erro na linha 3 e 7.
+e) Compila.
+
+
+3.3 Exercícios
+
+1 - Qual é uma assinatura válida do método main para executar um programa Java?
+a) public static void main(String... args)
+b) public static int main(String[] args)
+c) public static Void main(String []args)
+d) protected static void main(String[] args)
+e) public static void main(int argc, String[] args)
+
+2 - Escolha a opção adequada para compilar e rodar o arquivo A.java, existente no diretório b:
+
+package b;
+class A {
+    public static void main(String[] args) {
+        System.out.println("running");
+    }
+}
+
+a) javac A e java A
+b) javac A.java e java A
+c) javac b/A.java e java A
+d) javac b/A.java e java b.A
+e) javac b.A.java e java b.A
+f) javac b.A e java b.A
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        System.out.println(args); // A
+        System.out.println(args.length); // B
+        System.out.println(args[0]); // C
+    }
+}
+
+a) Não compila: array não possui membro length.
+b) Não compila: o método println não consegue imprimir um array.
+c) Ao rodar sem argumentos, ocorre uma ArrayIndexOutOfBoundsException na linha C.
+d) Ao rodar sem argumentos, ocorre uma NullPointerException na linha B.
+e) Ao rodar sem argumentos, são impressos os valores “1” e “A”.
+f) Ao rodar com o argumento “certification”, são impressos os valores “2” e “A”.
+
+4 - Escolha a opção adequada para rodar a classe A.java presente no diretório b, 
+que foi compactado em um arquivo chamado program.jar, sendo que não existe nenhum arquivo de manifesto:
+
+package b;
+class A {
+    public static void main(String[] args) {
+        System.out.println(args[0]);
+    }
+}
+
+a) java jar program.jar
+b) java jar program.jar b.A
+c) java -jar program.jar
+d) java -jar program.jar b.A
+e) java -cp program.jar
+f) java -cp program.jar b.A
+
+5 - Escolha a opção adequada para compilar a classe A.java, definida como no pacote b presente no diretório b, 
+e adicionar também o arquivo program.jar na busca de classes durante a compilação. Lembre-se que . significa 
+o diretório atual.
+
+a) javac -cp b.A.java -cp program.jar
+b) javac -jar program.jar b.A.java
+c) javac -cp program.jar:b A.java
+d) javac -cp program.jar:. b.A.java
+e) javac -cp . -cp program.jar
+f) javac -jar program.jar:. b/A.java
+g) javac -cp program.jar:b b/A.java
+h) javac -cp program.jar:. b/A.java
+
+3.4 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o Test. Arquivo no diretório atual:
+
+import model.A;
+
+class Test {
+    public static void main(String[] args) {
+        new A("guilherme").print();
+    }
+}
+
+Arquivo no diretório model:
+
+package model;
+
+class A {
+    private String name;
+    
+    A(String name) {
+        this.name = name;
+    }
+
+    public void print() {
+        System.out.println(name);
+    }
+}
+
+a) Não compila: erro na classe Test.
+b) Não compila: erro na classe A.
+c) Erro de execução: método main.
+d) Roda e imprime “Guilherme”.
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+import model.basic.Client;
+import model.advanced.Client;
+
+class Test {
+    public static void main(String[] args) {
+        System.out.println("Welcome!");
+    }
+}
+
+No arquivo model/basic/Client.java:
+
+public class Client{}
+
+No arquivo model/advanced/Client.java:
+
+public class Client{}
+
+a) O código do primeiro arquivo não compila, erro ao tentar importar
+duas classes com o mesmo nome.
+b) O código do terceiro arquivo não compila, erro ao tentar definir uma
+classe com o nome de uma classe que já existe.
+c) O código todo compila, mas ao rodar dá erro por ter importado duas
+classes com o mesmo nome.
+d) O código todo compila e roda imprimindo Welcome!, uma vez que
+nenhuma das classes importadas é usada no código, não existe ambiguidade.
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+import model.basic.Client;
+import model.advanced.*;
+
+class Test {
+    public static void main(String[] args) {
+        System.out.println("Welcome " + new Client().name);
+    }
+}
+
+No arquivo model/basic/Client.java:
+
+public class Client{
+    public String name="guilherme";
+}
+
+No arquivo model/advanced/Client.java:
+
+public class Client{
+    public String name = "mario";
+}
+
+a) O código do primeiro arquivo não compila, erro ao tentar importar
+duas classes com o mesmo nome.
+b) O código compila mas ao rodar dá erro por ter importado duas classes
+com o mesmo nome.
+c) O código compila e roda imprimindo Welcome guilherme.
+
+4 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+import model.basic.Client;
+import model.basic.Client;
+
+class Test {
+    public static void main(String[] args) {
+        System.out.println("Welcome " + new Client().name);
+    }
+}
+
+No arquivo model/basic/Client.java:
+
+public class Client{
+    public String name="guilherme";
+}
+
+a) O código do primeiro arquivo não compila, erro ao tentar importar
+duas classes com o mesmo nome.
+b) O código compila, mas ao rodar dá erro por ter importado duas classes
+com o mesmo nome.
+c) O código compila e roda imprimindo Bem vindo!, uma vez que não
+há ambiguidade.
+
+5 - Escolha a opção adequada ao tentar compilar os arquivos a seguir:
+a/A.java:
+
+package a;
+
+class A {
+    b.B variable;
+}
+
+a/C.java:
+
+package a;
+
+class C {
+    b.B variable;
+}
+
+a/b/B.java:
+
+package a.b;
+
+class B {
+}
+
+a) Erro de compilação somente no arquivo A.
+b) Erro de compilação somente no arquivo B.
+c) Erro de compilação somente no arquivo C.
+d) Erro de compilação nos arquivos A e B.
+e) Erro de compilação nos arquivos A e C.
+f) Erro de compilação nos arquivos B e C.
+g) Compila com sucesso.
+
+6 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+package A;
+
+class B{
+    public static void main(String[] a) {
+        System.out.println("running");
+    }
+}
+
+a) Não compila: a variável do método main deve se chamar args.
+b) Não compila: pacote com letra maiúscula.
+c) Compila mas não roda: a classe B não é pública.
+d) Compila e roda.
+
+7 - Escolha a opção adequada ao tentar compilar os arquivos a seguir:
+a/A.java:
+
+package a;
+
+public class A {
+    public static final int VALUE = 15;
+
+    public void run(int x) {
+        System.out.println(x);
+    }
+}
+
+b/B.java:
+
+package b;
+
+import static a.A.*;
+
+class B{
+    void m() {
+        A a = new A();
+        a.run(VALUE);
+    }
+}
+
+a) B não compila: erro na linha 2.
+b) B não compila: erro na linha 5.
+c) B não compila: erro na linha 6.
+d) Tudo compila.
+
+8 - Escolha a opção adequada ao tentar compilar os arquivos a seguir:
+a/A.java:
+
+package a;
+
+public class A {
+    public static final int VALUE = 15;
+
+    public void run(int x) {
+        System.out.println(x);
+    }
+}
+
+b/B.java:
+
+package b;
+
+import a.A;
+import static a.A.*;
+
+class B{
+    void m() {
+        A a = new A();
+        a.run(VALUE);
+    }
+}
+
+a) B não compila: erro na linha 3.
+b) B não compila: erro na linha 5.
+c) B não compila: erro na linha 6.
+d) Tudo compila.
+
+
+9 - Escolha a opção adequada ao tentar compilar os arquivos a seguir:
+A.java:
+
+public class A {
+    public static final int VALUE = 15;
+
+    public void run(int x) {
+        System.out.println(x);
+    }
+}
+
+b/B.java:
+
+package b;
+
+import static A.*;
+
+class B{
+    void m() {
+        A a = new A();
+        a.run(VALUE);
+    }
+}
+
+a) Não compila
+b) Tudo compila.
+
+4.1 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int age = 100;
+        System.out.println(age);
+    }
+}
+
+a) O código não compila: erros a partir da linha que define uma variável do tipo int.
+b) O código não compila: a variável age não foi inicializada, mas foi usada em System.out.println.
+c) O código compila e imprime 0.
+d) O código compila e imprime 100.
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int age;
+        if(args.length > 0) {
+            age = Integer.parseInt(args[0]);
+        } else {
+            System.err.println("???");
+        }
+        System.out.println(age);
+    }
+}
+
+a) Não compila: erro na linha que tenta acessar a variável age.
+b) Compila e imprime 0 ou a idade que for passada na linha de comando.
+c) Compila e imprime a idade que for passada na linha de comando.
+d) Compila e imprime a mensagem de erro ou imprime a idade.
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int age;
+        if(args.length > 0) {
+            age = Integer.parseInt(args[0]);
+        } else {
+            System.err.println("???");
+            return;
+        }
+        System.out.println(age);
+    }
+}
+
+a) Não compila: erro na linha que tenta acessar a variável age.
+b) Compila e imprime 0 ou a idade que for passada na linha de comando.
+c) Compila e imprime a idade que for passada na linha de comando.
+d) Compila e imprime a mensagem de erro ou imprime a idade.
+
+4 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        boolean array = new boolean[300];
+        System.out.println(array[3]);
+    }
+}
+
+a) Imprime true.
+b) Imprime false.
+c) Imprime 0.
+d) Imprime -1.
+e) Imprime null.
+f) Não compila.
+
+5 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        boolean[] array = new boolean[300];
+        System.out.println(array[3]);
+    }
+}
+
+a) Imprime true.
+b) Imprime false.
+c) Imprime 0.
+d) Imprime -1.
+e) Imprime null.
+f) Não compila.
+
+6 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        boolean argis;
+        if(args.length > 0)
+            argis = true;
+        else
+            argis = false;
+        System.out.println(argis);
+    }
+}
+
+a) Não compila: o método de impressão não recebe boolean.
+b) Não compila: atribuição inválida.
+c) Não compila: o método length de array não é uma propriedade.
+d) Não compila: o método length de String[] não é uma propriedade.
+e) Compila e imprime 0 ou 1.
+f) Compila e imprime false ou true.
+
+7 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+
+class A {
+    public static void main(String[] args) {
+        int n = 09;
+        int m = 03;
+        int x = 1_000;
+        System.out.println(x - n + m);
+    }
+}
+
+a) Não compila: erro na linha que declara n.
+b) Não compila: erro na linha que declara x.
+c) Não compila: erro na linha que declara m.
+d) Compila e imprime um número menor que 1000.
+
+8 -  Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        for(char c='a'; c <= 'z'; c++) {
+            System.out.println(c);
+        }
+    }
+}
+
+a) Não compila: não podemos somar um em um caractere.
+b) Não compila: não podemos comparar caracteres com <.
+c) Compila e imprime o alfabeto entre a e z, inclusive.
+
+9 - Qual das palavras a seguir não é reservada em Java?
+
+a) strictfp
+b) native
+c) volatile
+d) transient
+e) instanceOf
+
+10 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+class A {
+    public static void main(String[] args) {
+        boolean BOOLEAN = false;
+        if(BOOLEAN) {
+            System.out.println("Yes");
+        }
+    }
+}
+
+a) Não compila: não podemos declarar uma variável com o nome de uma palavra reservada.
+b) Não compila: não podemos declarar uma variável iniciando com letras maiúsculas.
+c) Compila e roda, imprimindo Yes.
+d) Compila e roda, não imprimindo nada.
+
+4.2 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int x = 15;
+        int y = x;
+        y++;
+        x++;
+        int z = y;
+        z--;
+        System.out.println(x + y + z);
+    }
+}
+
+a) Imprime 43.
+b) Imprime 44.
+c) Imprime 45.
+d) Imprime 46.
+e) Imprime 47.
+f) Imprime 48.
+g) Imprime 49.
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    int v = 15;
+}
+
+class A {
+    public static void main(String[] args) {
+        B x = new B();
+        B y = x;
+        y.v++;
+        x.v++;
+        B z = y;
+        z.v--;
+        System.out.println(x.v + y.v + z.v);
+    }
+}
+
+a) Imprime 43.
+b) Imprime 44.
+c) Imprime 45.
+d) Imprime 46.
+e) Imprime 47.
+f) Imprime 48.
+g) Imprime 49.
+
+4.3 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B{
+    int c;
+    void c(int c) {
+        c = c;
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        B b = new B();
+        b.c = 10;
+        System.out.println(b.c);
+        b.c(30);
+        System.out.println(b.c);
+    }
+}
+
+a) Não compila: conflito de nome de variável membro e método em B.
+b) Não compila: conflito de nome de variável membro e variável local em B.
+c) Compila e roda, imprimindo 10 e 30.
+d) Compila e roda, imprimindo outro resultado.
+
+4.4 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+}
+
+class A {
+    public static void main(String[] args) {
+        B b;
+        for(int i = 0; i < 10; i++)
+            b = new B();
+        System.out.println("end!");
+    }
+}
+
+a) Não compila.
+b) Compila e garbage coleta 10 objetos do tipo B na linha do System.out.
+c) Compila e não podemos falar quantos objetos do tipo B foram garbage coletados na linha do System.out.
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+}
+
+class A {
+    public static void main(String[] args) {
+        B b = new B();
+        for(int i = 0; i < 10; i++)
+            b = new B();
+        System.out.println("end!");
+    }
+}
+
+a) Não compila.
+b) Compila e 10 objetos do tipo B podem ser garbage coletados ao chegar na linha do System.out.
+c) Compila e 11 objetos do tipo B podem ser garbage coletados ao chegar na linha do System.out.
+d) Compila e garbage coleta 11 objetos do tipo B na linha do System.out.
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+}
+
+class A {
+    public static void main(String[] args) {
+        B[] bs = new B[100];
+        System.out.println("end!");
+    }
+}
+
+a) Compila e 100 objetos do tipo B são criados, mas não podemos falar nada sobre o garbage collector ter jogado os objetos fora na linha do System.out.
+b) Compila e nenhum objeto do tipo B é criado.
+c) Compila, cria 100 e joga fora todos os objetos do tipo B ao chegar no System.out.
+
+4.5 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    void x() {
+        System.out.println("empty");
+    }
+    
+    void x(String... args) {
+        System.out.println(args.length);
+    }
+}
+
+class C {
+    void x(String... args) {
+        System.out.println(args.length);
+    }
+    
+    void x() {
+        System.out.println("empty");
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        new B().x();
+        new C().x();
+    }
+}
+
+a) Não compila: conflito entre método com varargs e sem argumentos.
+b) Compila e imprime empty/empty.
+c) Compila e imprime empty/0.
+d) Compila e imprime 0/empty.
+e) Compila e imprime 0/0.
+
+2  - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    void x(int... x) {
+        System.out.println(x.length);
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        new B().x(23789, 673482);
+    }
+}
+
+a) Não compila: varargs tem método e não atributo length.
+b) Compila e ao rodar imprime os dois números.
+c) Compila e ao rodar imprime 2.
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    void x(int... x) {
+        System.out.println(x.length);
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        new B().x(new int[]{23789, 673482});
+    }
+}
+
+a) Não compila: varargs tem método e não atributo length.
+b) Não compila: não podemos passar um array para um varargs.
+c) Compila e ao rodar imprime os dois números.
+d) Compila e ao rodar imprime 1.
+e) Compila e ao rodar imprime 2.
+
+4 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    void x(Object... x) {
+        System.out.println(x.length);
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        new B().x(new Object[]{23789, 673482});
+    }
+}
+
+a) Não compila: varargs tem método e não atributo length.
+b) Não compila: não podemos passar um array para um varargs.
+c) Compila e ao rodar imprime os dois números.
+d) Compila e ao rodar imprime 1.
+e) Compila e ao rodar imprime 2.
+
+
+4.6 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("guilherme").delete(2, 3);
+        System.out.println(sb);
+    }
+}
+
+a) O código não compila: erro na linha que tenta imprimir o StringBuilder.
+b) O código compila e imprime glherme.
+c) O código compila e imprime guherme.
+d) O código compila e imprime gilherme.
+e) O código compila e imprime gulherme.
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder("guilherme");
+        System.out.println(sb.indexOf("e") + sb.lastIndexOf("e"));
+        System.out.println(sb.indexOf("k") + sb.lastIndexOf("k"));
+    }
+}
+
+a) O código imprime 13 e -2.
+b) O código imprime 13 e 0.
+c) O código imprime 13 e -1.
+d) O código imprime 13 e 8.
+e) O código imprime 13 e 10.
+f) O código imprime 15 e -2.
+g) O código imprime 15 e 0.
+h) O código imprime 15 e -1.
+i) O código imprime 15 e 8.
+j) O código imprime 15 e 10.
+
+4.7 Exercícios
+
+1 - Considere o seguinte código dentro de um main:
+
+class A {
+    public static void main(String[] args) {
+        String s = "aba";
+        for (int i = 0; i < 9; i++) {
+            s = s + "aba";
+        }
+        System.out.println(s.length());
+    }
+}
+
+a) Não compila.
+b) Compila e imprime 3.
+c) Compila e imprime 30.
+d) Compila e imprime 33.
+e) Compila e imprime 36.
+
+2 - Dada a seguinte classe:
+
+class B {
+    String msg;
+    void imprime() {
+        if (!msg.isEmpty())
+            System.out.println(msg);
+        else
+            System.out.println("empty");
+    }
+}
+
+O que acontece se chamarmos `new B().imprime()`?
+a) Não compila.
+b) Compila, mas dá exceção na hora de rodar.
+c) Compila, roda e não imprime nada.
+d) Compila, roda e imprime “empty”.
+
+3 - Dada a seguinte classe:
+
+class B {
+    void imprime() {
+        String msg;
+        if (!msg.isEmpty())
+            System.out.println(msg);
+        else
+            System.out.println("empty");
+    }
+}
+
+O que acontece se chamarmos `new B().imprime()`?
+a) Não compila.
+b) Compila, mas dá exceção na hora de rodar.
+c) Compila, roda e não imprime nada.
+d) Compila, roda e imprime “empty”.
+
+4 - Qual é a saída nos dois casos?
+
+String s = "Caelum";
+s.concat(" - Ensino e Inovação");
+System.out.println(s);
+
+StringBuffer sb = new StringBuffer("Caelum");
+sb.append(" - Ensino e Inovação");
+System.out.println(sb);
+
+a) ‘Caelum‘ e ‘Caelum - Ensino e Inovação‘.
+b) ‘Caelum - Ensino e Inovação‘ e ‘Caelum - Ensino e Inovação‘.
+
+5 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        String empty = null;
+        String full = "Welcome " + empty;
+        System.out.println(full);
+    }
+}
+
+a) Não compila pois `empty` é nulo.
+b) Não compila por outro motivo.
+c) Compila e imprime “Welcome “.
+d) Compila e imprime “Welcome empty”.
+e) Compila e imprime outro resultado que não foi mencionado nessas alternativas.
+
+6 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        String empty;
+        String full = "Welcome " + empty;
+        System.out.println(full);
+    }
+}
+
+a) Não compila pois `empty` é nulo.
+b) Não compila por outro motivo.
+c) Compila e imprime “Welcome “.
+d) Compila e imprime “Welcome vazio”.
+e) Compila e imprime outro resultado que não foi mencionado nessas alternativas.
+
+7 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    String empty;
+    public static void main(String[] args) {
+        String full = "Welcome " + empty;
+        System.out.println(full);
+    }
+}
+
+a) Não compila pois `empty` é nulo.
+b) Não compila por outro motivo.
+c) Compila e imprime “Welcome “.
+d) Compila e imprime “Welcome empty”.
+e) Compila e imprime outro resultado que não foi mencionado nessas alternativas.
+
+8 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    static String empty;
+    public static void main(String[] args) {
+        String full = "Welcome " + empty;
+        System.out.println(full);
+    }
+}
+
+a) Não compila pois `empty` é nulo.
+b) Não compila por outro motivo.
+c) Compila e imprime “Welcome “.
+d) Compila e imprime “Welcome empty”.
+e) Compila e imprime outro resultado que não foi mencionado nessas alternativas.
+
+9 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        String s = null;
+        String s2 = new String(s);
+        System.out.println(s2);
+    }
+}
+
+a) Não compila ao tentar invocar o construtor.
+b) Compila e não imprime nada.
+c) Compila e imprime null.
+d) Compila e dá erro de execução ao tentar criar a segunda String.
+
+10 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        String s = "estudando para a certificação";
+        System.out.println(s.substring(3, 6));
+    }
+}
+
+a) Não compila: caractere com acento e cedilha dentro de uma String.
+b) Não compila: `substring` é `subString`.
+c) Compila e imprime “uda”.
+d) Compila e imprime “tuda”.
+e) Compila e imprime “tud”.
+
+11 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        String s2 = new String(null);
+        System.out.println(s2);
+    }
+}
+
+a) Não compila ao tentar invocar o construtor.
+b) Compila e não imprime nada.
+c) Compila e imprime null.
+d) Compila e dá erro de execução ao tentar criar a String.
+
+12 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int val = 10;
+        int div = 4;
+        double res = val / div;
+        System.out.println(val + div + "...");
+        System.out.println(res + " = result");
+    }
+}
+
+a) Imprime os números 10, 4 e 2.5.
+b) Imprime os números 14 e 2.5.
+c) Nenhuma das outras alternativas.
+
+13 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        String s = "estudando para a cert
+
+ificação";
+        s.replace("e", 'a');
+        System.out.println(s);
+    }
+}
+
+a) Não compila.
+b) Compila e imprime “estudando para a certificação”.
+c) Compila e imprime “astudando para a cartificação”.
+d) Compila e imprime “studando para a crtificação”.
+
+14 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        String s = "guilherme";
+        s.substring(0, 2) = "gua";
+        System.out.println(s);
+    }
+}
+
+a) Erro de compilação.
+b) Compila e imprime “guilherme”.
+c) Compila e imprime “gualherme”.
+
+5.1 Exercícios
+
+1 - Qual código a seguir compila?
+a) short s = 10; char c = s;
+b) char c = 10; long l = c;
+c) char c = 10; short s = c;
+
+2 - Faça contas com diferentes operandos:
+
+int i1 = 3/2;
+double i2 = 3/2;
+double i3 = 3/2.0;
+long x = 0; double d = 0;
+double zero = x + d;
+System.out.println(i1 + i2 + i3 + x + d + zero);
+
+Qual o resultado?
+a) 3
+b) 3.5
+c) 4
+d) 4.5
+
+3 - O código a seguir pode lançar um NullPointerException. Como evitar isso mantendo a mesma lógica?
+
+void method(Car c) {
+    if(c != null & c.getPreco() > 100000) {
+        System.out.println("expensive");
+    }
+}
+
+a) Trocando != por ==
+b) Trocando > por <
+c) Trocando & por |
+d) Trocando & por &&
+
+4 - Alguns testes interessantes com tipos primitivos:
+
+int i = (byte) 5;
+long l = 3.0;
+float f = 0.0;
+char c = 3;
+char c2 = -2;
+
+Quais compilam?
+a) i, f e c
+b) i, f, c e c2
+c) i, f e c2
+d) i e c
+e) f e c
+f) f e c2
+g) i e l
+h) l, f e c
+i) i, c e c2
+
+5 - A expressão a seguir pode ser reduzida, como podemos fazer?
+
+if ((train && !car) || (!train && car)) {
+    // ....
+}
+
+- Trocando para usar um operador & e um |
+- Trocando para usar dois operadores & e um |
+- Trocando para usar um operador ! e um ^
+- Trocando para usar um operador ^
+- Removendo os parênteses
+- Removendo o || do meio
+- Removendo os !
+
+6 - Imprima a divisão por 0 de números inteiros e de números com ponto flutuante:
+
+System.out.println(3 / 0);
+System.out.println(3 / 0.0);
+System.out.println(3.0 / 0);
+System.out.println(-3.0 / 0);
+
+Quais os resultados?
+
+7 - Leia o código abaixo:
+class Xyz {
+    public static void main(String[] args) {
+        int y;
+        for(int x = 0; x<10; ++x) {
+            y = x % 5 + 2;
+        }
+        System.out.println(y);
+    }
+}
+
+Qual o resultado desse código?
+a) Erro de compilação na linha 3
+b) Erro de compilação na linha 7
+c) 1
+d) 2
+e) 3
+f) 4
+g) 5
+h) 6
+
+8 - Leia o código abaixo:
+
+class Test {
+    public static void main(String[] args){
+        byte b = 1;
+        int i = 1;
+        long l = 1;
+        float f = 1.0;
+    }
+}
+
+O código:
+a) Não compila a linha 3 pois “1” é int e não pode ser colocado em um byte
+b) Não compila a linha 4 pois “1” é long e não pode ser colocado em um int
+c) Não compila a linha 5 pois “1” é int e não pode ser colocado em um long
+d) Não compila a linha 6 pois “1.0” é double e não pode ser colocado em um float
+e) Todas as linhas compilam
+
+9 - Leia o código abaixo: 
+
+class $_o0o_$ {
+    public static void main(String[] args) {
+        int $$ = 5;
+        int __ = $$++;
+        if (__ < ++$$ || __-- > $$)
+            System.out.print("A");
+        System.out.print($$);
+        System.out.print(__);
+    }
+}
+
+O estranho código:
+a) Não compila por causa do nome da classe
+b) Não compila por causa dos nomes das variáveis
+c) Compila mas dá erro na execução
+d) Compila, roda e imprime A76
+e) Compila, roda e imprime A75
+f) Compila, roda e imprime A74
+g) Compila, roda e imprime 76
+
+**Exercícios**
+
+1 - O que acontece com o seguinte código? Compila? Roda?
+
+public class Test{
+    public static void main(String[] args) {
+        byte b1 = 5;
+        byte b2 = 3;
+        byte b3 = b1 + b2;
+    }
+}
+
+
+2 - O que acontece com seguinte código?
+
+public class Test{
+    public static void main(String[] args) {
+        byte b1 = 127;
+        byte b2 = -128;
+        byte b3 = b1 + b2;
+        System.out.println(b3);
+    }
+}
+
+a) Não compila por um erro na linha 3
+b) Não compila por um erro na linha 4
+c) Não compila por um erro na linha 5
+d) Compila e imprime -1
+
+3 - Leia o código abaixo:
+
+public class Test {
+    public static void main(String[] args) {
+        int i;
+        for (i = 0; i < 5; i++) {
+            if (++i % 3 == 0) {
+                break;
+            }
+        }
+        System.out.println(i);
+    }
+}
+
+Qual é o resultado do código:
+a) imprime 1
+b) imprime 2
+c) imprime 3
+d) imprime 4
+
+4 - Considerando o mesmo código da questão anterior, e se trocarmos para pós-incremento dentro do if?
+
+public class Test {
+    public static void main(String[] args) {
+        int i;
+        for (i = 0; i < 5; i++) {
+            if (i++ % 3 == 0) {
+                break;
+            }
+        }
+        System.out.println(i);
+    }
+}
+
+Qual é o resultado?:
+a) imprime 1
+b) imprime 2
+c) imprime 3
+d) imprime 4
+
+5 - Qual é o resultado do seguinte código:
+
+public class Test {
+    public static void main(String[] args) {
+        int i;
+        for (
+
+i = 0; i < 5; i++) {
+            if (++i % 3 == 0) {
+                break;
+            }
+        }
+        System.out.println(i);
+    }
+}
+
+
+6 - E se trocarmos o pré-incremento para pós-incremento ( i++)?
+
+7 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        byte b1 = 100;
+        byte b2 = 131;
+        System.out.println(b1);
+    }
+}
+
+a) Compila e imprime um número positivo.
+b) Compila e imprime um número negativo.
+c) Compila e dá uma exception de estouro de número.
+d) Compila e imprime um número que não sabemos dizer ao certo.
+e) Compila e imprime “Not A Number”.
+f) Não compila.
+
+8 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        char c = 65;
+        char c2 = -3;
+        System.out.println(c + c2);
+    }
+}
+
+a) Não compila nas duas declarações de char.
+b) Não compila nas três linhas dentro do método main.
+c) Não compila somente na declaração de c2.
+d) Não compila somente na soma de caracteres.
+e) Compila e roda, imprimindo 62.
+f) Compila e roda, imprimindo um outro valor.
+
+9 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        char c = 65;
+        char c2 = 68 - 65;
+        System.out.println(c + c2);
+    }
+}
+
+a) Não compila nas duas declarações de char.
+b) Não compila nas três linhas dentro do método main.
+c) Não compila somente na declaração de c2.
+d) Não compila somente na soma de caracteres.
+e) Compila e roda, imprimindo 62.
+f) Compila e roda, imprimindo um outro valor.
+
+10 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        double result = 15 / 0;
+        System.out.println(result);
+    }
+}
+
+a) Não compila.
+b) Compila e dá exception.
+c) Compila e imprime positivo infinito.
+d) Compila e imprime 0.
+
+11 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        String result = "results: " + 15 / 0.0;
+        System.out.println(result);
+    }
+}
+
+a) Não compila.
+b) Compila e dá exception.
+c) Compila e imprime positivo infinito.
+d) Compila e imprime 0.
+
+12 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        System.out.println(1==true);
+    }
+}
+
+a) Não compila.
+b) Compila e imprime verdadeiro.
+c) Compila e imprime falso.
+
+5.2 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+   public static void main(String[] args) {
+      String result = ("division: " + 15) / 0.0;
+      System.out.println(result);
+   }
+}
+
+a) Não compila.
+b) Compila e dá exception.
+c) Compila e imprime positivo infinito.
+d) Compila e imprime 0.
+
+2) Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+   public static void main(String[] args) {
+      System.out.println(((!(true == false)) == true ? 1 : 0) == 0);
+   }
+}
+
+a) Imprime true.
+b) Imprime false.
+c) Não compila.
+d) Imprime 1.
+e) Imprime 0.
+
+5.3 Exercícios
+
+1 - class A {
+
+public static void main(String[] args) {
+   String s1 = "s1";
+   String s2 = "s" + "1";
+   System.out.println(s1 == s2);
+   System.out.println(s1 == ("" + s2));
+}
+
+a) Não compila.
+b) Compila e imprime true, false.
+c) Compila e imprime true, true.
+d) Compila e imprime false, false.
+e) Compila e imprime false, true.
+
+2 - class A {
+
+public static void main(String[] args) {
+   String s1 = "s1";
+   String s2 = s1.substring(0, 1) + s1.substring(1, 1);
+   System.out.println(s1 == s2);
+   System.out.println(s1.equals(s2));
+}
+
+a) Não compila.
+b) Compila e imprime true, false.
+c) Compila e imprime true, true.
+d) Compila e imprime false, false.
+e) Compila e imprime false, true.
+
+3 - class A {
+
+public static void main(String[] args) {
+   String s1 = "s1";
+   String s2 = s1.substring(0, 2);
+   System.out.println(s1 == s2);
+   System.out.println(s1.equals(s2));
+}
+
+a) Não compila.
+b) Compila e imprime true, false.
+c) Compila e imprime true, true.
+d) Compila e imprime false, false.
+e) Compila e imprime false, true.
+
+4 - class B extends C {}
+
+class C {
+   int x;
+
+   public boolean equals(C c) {
+      return c.x == x;
+   }
+}
+class A {
+   public static void main(String[] args) {
+      C a = new C();
+      C b = new B();
+      a.x = 1;
+      b.x = 1;
+      System.out.println(a == b);
+      System.out.println(a.equals(b));
+   }
+}
+
+a) Não compila.
+b) Compila e imprime true, false.
+c) Compila e imprime true, true.
+d) Compila e imprime false, false.
+e) Compila e imprime false, true.
+
+5 - class B extends C {}
+
+class D {
+   int x;
+}
+class C {
+   int x;
+
+   public boolean equals(Object c) {
+      return ((C) c).x == x;
+   }
+}
+class A {
+   public static void main(String[] args) {
+      C a = new C();
+      C b = new D();
+      a.x = 1;
+      b.x = 1;
+      System.out.println(a == b);
+      System.out.println(a.equals(b));
+   }
+}
+
+a) Não compila.
+b) Compila e imprime true, false.
+c) Compila e imprime true, true.
+d) Compila e imprime false, false.
+e) Compila e imprime false, true.
+
+5.4 Exercícios
+
+1 - class A {
+
+public static void main(String[] args) {
+   if (args.length > 0)
+      System.out.println("1 or more");
+   else
+      System.out.println("0");
+}
+
+a) Não compila: length é método.
+b) Não compila: faltou chaves no if e else.
+c) Se invocarmos sem argumentos, imprime 0.
+d) Nunca imprimirá 0.
+
+2 - class B {
+
+final boolean valor = false;
+}
+class A {
+   public static void main(String[] args) {
+      B b = new B();
+      if (b.valor = true) {
+         System.out.println("uhu true");
+      }
+   }
+}
+
+a) Não compila.
+b) Compila e imprime uhu true.
+c) Compila e não imprime nada.
+
+3 - class A {
+
+public static void main(String[] args) {
+   int qt = 15;
+   if (qt = 15) {
+      System.out.println("yes");
+   } else {
+      System.out.println("no");
+   }
+}
+
+a) Não compila.
+b) Imprime sim.
+c) Imprime não.
+
+4 - class A {
+
+public static void main(String[] args) {
+   if (args.length == 1)
+      System.out.println("one");
+   elseif (args.length == 2)
+      System.out.println("two");
+   elseif (args.length == 3)
+      System.out.println("three");
+   else
+      System.out.println("four");
+}
+
+a) Não compila.
+b) Roda e imprime “one” quando passamos um argumento.
+c) Roda e imprime “three” quando passamos 4 argumentos.
+d) Roda e não imprime nada quando passamos nenhum argumento.
+
+5 - class A {
+
+public static void main(String[] args) {
+   String name = args[0];
+   if (name.equals("guilherme"))
+      System.out.println(name);
+   System.out.println("good");
+   else
+      System.out.println("better");
+   System.out.println(name);
+}
+
+a) Erro de compilação no if.
+b) Erro de compilação no else.
+c) Compila e imprime o nome e “good” caso o primeiro argumento seja guilherme.
+d) Compila e dá erro de execução caso não passe nenhum argumento na linha de comando.
+
+5.5 Exercícios
+
+1 - class A {
+
+public static void main(String[] args) {
+   int t = args.length;
+   switch(t) {
+      case 1:
+         System.out.println("1");
+      case 2:
+         System.out.println("2");
+      default:
+         System.out.println("+++");
+   }
+}
+
+a) Não compila.
+b) Ao rodar sem argumentos, joga uma exception.
+c) Ao rodar com dois argumentos, imprime somente “2”.
+d) Ao rodar com 5 argumentos, imprime “+++”.
+
+2 - class A {
+
+public static void main(String[] args) {
+   int t2 = 1;
+   int t = args.length;
+   switch(t) {
+      case t2:
+         System.out.println("1");
+         break;
+      default:
+         System.out.println("arg???");
+   }
+}
+
+a) Não compila.
+b) Ao rodar sem argumentos, joga uma exception.
+c) Ao rodar com um argumento, imprime somente “1”.
+d) Ao rodar com 5 argumentos, imprime “arg???”.
+
+3 - class A {
+
+public static void main(String[] args) {
+   switch("Guilherme") {
+      case "Guilherme":
+         System.out.println("Guilherme");
+         break;
+      case "42":
+         System.out.println("42");
+      default:
+         System.out.println("Mario");
+   }
+}
+
+a) Não compila, pois um número não pode ser comparado com String.
+b) Compila e imprime Guilherme.
+c) Não compila, pois o código do case 42 e default nunca serão executados.
+
+4 - class A {
+
+public static void main(String[] args) {
+   int count = args.length;
+   switch(count) {
+      case 0: {
+         System.out.println("---");
+         break;
+      }
+      case 1:
+      case 2: {
+         System.out.println("ok");
+         break;
+      }
+      default: {
+         System.out.println("default");
+      }
+   }
+}
+
+a) Erro de compilação.
+b) Se rodar com 1 argumento, imprime ok e mais uma mensagem.
+c) Se rodar com 1 argumento, não imprime nada.
+d) Se rodar com 5 argumentos, imprime default.
+
+5 - class A {
+
+public static void main(String[] args) {
+   switch(10) {
+      case < 10:
+         System.out.println("<");
+      default:
+         System.out.println("=");
+      case > 10:
+         System.out.println(">");
+   }
+}
+
+a) Erro de compilação.
+b) Compila e imprime “=”.
+c) Compila e imprime “=” e “>”.
+
+6 - class A {
+
+public static void main(String[] args) {
+   switch(10) {
+      case 10:
+         System.out.println("a");
+         break;
+      case 11:
+         System.out.println("d");
+      default:
+         System.out.println("c");
+   }
+}
+
+a) Não compila.
+b) Imprime a e b e c e d.
+c) Imprime a.
