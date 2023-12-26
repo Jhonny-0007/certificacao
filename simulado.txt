@@ -1803,3 +1803,4242 @@ public static void main(String[] args) {
 a) Não compila.
 b) Imprime a e b e c e d.
 c) Imprime a.
+
+5.4 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        if(args.length > 0)
+            System.out.println("1 or more");
+        else
+            System.out.println("0");
+    }
+}
+
+a) Não compila: `length` é método.
+
+b) Não compila: faltou chaves no `if` e `else`.
+
+c) Se invocarmos sem argumentos, imprime 0.
+
+d) Nunca imprimirá 0.
+
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    final boolean valor = false;
+}
+
+class A {
+    public static void main(String[] args) {
+        B b = new B();
+        if(b.valor = true) {
+            System.out.println("uhu true");
+        }
+    }
+}
+
+a) Não compila.
+
+b) Compila e imprime "uhu true".
+
+c) Compila e não imprime nada.
+
+
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int qt = 15;
+        if(qt=15) {
+            System.out.println("yes");
+        } else {
+            System.out.println("no");
+        }
+    }
+}
+
+a) Não compila.
+
+b) Imprime "yes".
+
+c) Imprime "no".
+
+
+4 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        if(args.length==1)
+            System.out.println("one");
+        elseif(args.length==2)
+            System.out.println("two");
+        elseif(args.length==3)
+            System.out.println("three");
+        else
+            System.out.println("four");
+    }
+}
+
+a) Não compila.
+
+b) Roda e imprime "one" quando passamos um argumento.
+
+c) Roda e imprime "three" quando passamos 4 argumentos.
+
+d) Roda e não imprime nada quando passamos nenhum argumento.
+
+
+5 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        String name = args[0];
+        if(name.equals("guilherme"))
+            System.out.println(name);
+        System.out.println("good");
+        else
+            System.out.println("better");
+        System.out.println(name);
+    }
+}
+
+a) Erro de compilação no `if`.
+
+b) Erro de compilação no `else`.
+
+c) Compila e imprime o nome e "good" caso o primeiro argumento seja guilherme.
+
+d) Compila e dá erro de execução caso não passe nenhum argumento na linha de comando.
+
+
+5.5 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int t = args.length;
+        switch(t) {
+            case 1:
+                System.out.println("1");
+            case 2:
+                System.out.println("2");
+            default:
+                System.out.println("+++");
+        }
+    }
+}
+
+a) Não compila.
+
+b) Ao rodar sem argumentos joga uma exception.
+
+c) Ao rodar com dois argumentos, imprime somente “2”.
+
+d) Ao rodar com 5 argumentos, imprime “+++”.
+
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int t2 = 1;
+        int t = args.length;
+        switch(t) {
+            case t2:
+                System.out.println("1");
+                break;
+            default:
+                System.out.println("arg???");
+        }
+    }
+}
+
+a) Não compila.
+
+b) Ao rodar sem argumentos joga uma exception.
+
+c) Ao rodar com um argumento, imprime somente “1”.
+
+d) Ao rodar com 5 argumentos, imprime “arg???”
+
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        switch("Guilherme") {
+            case "Guilherme":
+                System.out.println("Guilherme");
+                break;
+            case "42":
+                System.out.println("42");
+            default:
+                System.out.println("Mario");
+        }
+    }
+}
+
+a) Não compila, pois um número não pode ser comparado com String.
+
+b) Compila e imprime Guilherme.
+
+c) Não compila, pois o código do case 42 e default nunca serão executados.
+
+
+4 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int count = args.length;
+        switch(count) {
+            case 0:
+                System.out.println("---");
+                break;
+            case 1:
+            case 2:
+                System.out.println("ok");
+                break;
+            default:
+                System.out.println("default");
+        }
+    }
+}
+
+a) Erro de compilação.
+
+b) Se rodar com 1 argumento, imprime ok e mais uma mensagem.
+
+c) Se rodar com 1 argumento, não imprime nada.
+
+d) Se rodar com 5 argumentos, imprime default.
+
+
+5 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        switch(10) {
+            case < 10:
+                System.out.println("<");
+            default:
+                System.out.println("=");
+            case > 10:
+                System.out.println(">");
+        }
+    }
+}
+
+a) Erro de compilação.
+
+b) Compila e imprime “=” e “>”.
+
+c) Compila e imprime “=”.
+
+
+6 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        switch(10) {
+            case 10:
+                System.out.println("a");
+                break;
+            case 11:
+                System.out.println("d");
+            default:
+                System.out.println("c");
+        }
+    }
+}
+
+a) Não compila.
+
+b) Imprime a e b e c e d.
+
+c) Imprime a.
+
+6.1 Exercícios
+
+1 - Escolha a opção que não compila:
+a) int[] x;
+b) int x[];
+c) int[]x;
+d) int [] x;
+e) []int x;
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int x[] = new int[30]; // A
+        int y[] = new int[3] {0,3,5}; // B
+    }
+}
+
+a) A linha A não compila.
+
+b) A linha B não compila.
+
+c) O código compila e roda.
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir, em relação às linhas dentro do método main:
+
+class A {
+    public static void main(String[] args) {
+        int x[] = new int[0];
+        int x[] = new int[] {0,3,5};
+        int x[] = {0,3,5};
+    }
+}
+
+a) A primeira e segunda linhas não compilam.
+
+b) A segunda e terceira linhas não compilam.
+
+c) Somente a terceira linha não compila.
+
+d) O programa compila e roda, dando uma exception.
+
+e) O programa compila e roda, imprimindo nada.
+
+4 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int x[] = new int[3];
+        for(int i=x.length;i>=0;i--) x[i]=i*2;
+        System.out.println("end!");
+    }
+}
+
+a) O programa não compila.
+
+b) O programa imprime end!.
+
+c) O programa compila e dá erro em execução.
+
+5 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int x[] = new int[3];
+        for(x[1]=x.length-1;x[0]==0;x[1]--) {
+            x[x[1]]=-5;
+            System.out.println(x[1]);
+        }
+    }
+}
+
+a) Não compila.
+
+b) Compila, imprime alguns números e dá uma Exception.
+
+c) Compila e não imprime nada.
+
+d) Compila e imprime 2.
+
+e) Compila e imprime -5.
+
+f) Compila e imprime 2, -5.
+
+g) Compila e imprime 2, -5, -5.
+
+h) Compila e imprime 2, 1, -5.
+
+i) Compila e imprime -5, -5.
+
+j) Dá exception.
+
+6 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int x[] = new int[3];
+        for(x[1]=x.length-1;x[1]>=0;x[1]--) {
+            x[x[1]]=-5;
+            System.out.println(x[1]);
+        }
+    }
+}
+
+a) Não compila.
+
+b) Compila, imprime alguns números e dá uma Exception.
+
+c) Compila e não imprime nada.
+
+d) Compila e imprime 2.
+
+e) Compila e imprime -5.
+
+f) Compila e imprime 2, -5.
+
+g) Compila e imprime 2, -5, -5.
+
+h) Compila e imprime 2, 1, -5.
+
+i) Compila e imprime -5, -5.
+
+j) Dá exception.
+
+7 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        String[] valores = new String[2];
+        valores[0] = "Certification";
+        valores[1] = "Java";
+        Object[] vals = (Object[]) valores;
+        vals[1] = "Daniela";
+        System.out.println(vals[1].equals(valores[1]));
+    }
+}
+
+a) O código não compila.
+
+b) O código compila e dá erro em execução.
+
+c) O código compila e imprime false.
+
+d) O código compila e imprime true.
+
+8 - Quais das maneiras adiante são declarações e inicializações válidas para um array?
+
+a) int[] array = new int[10];
+
+b) int array[] = new int[10];
+
+c) int[] array = new int[];
+
+d) int array[] = new int[];
+
+e) int[] array = new int[2]{1, 2};
+
+f) int[] array = new int[]{1, 2};
+
+g) int[] array = int[10];
+
+h) int[] array = new int[1, 2, 3];
+
+i) int array[] = new int[1, 2, 3];
+
+j) int array[] = {1, 2, 3};
+
+
+6.2 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int zyx[][] = new int[3];
+        int[] x = new int[20];
+        int[] y = new int[10];
+        int[] z = new int[30];
+        zyx[0] = x;
+        zyx[1] = y;
+        zyx[2] = z;
+        System.out.println(zyx[2].length);
+    }
+}
+
+a) Não compila, erro ao declarar zyx.
+
+b) Compila e dá erro ao tentar atribuir o segundo array a zyx.
+
+c) Compila e dá erro ao tentar imprimir o tamanho do array.
+
+d) Compila e imprime 10.
+
+e) Compila e imprime 20.
+
+f) Compila e imprime 30.
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int zyx[][] = new int[3][];
+        int[] x = new int[20];
+        int[] y = new int[10];
+        int[] z = new int[30];
+        zyx[0] = x;
+        zyx[1] = y;
+        zyx[2] = z;
+        System.out.println(zyx[2].length);
+    }
+}
+
+a) Não compila, erro ao declarar zyx.
+
+b) Compila e dá erro ao tentar atribuir o segundo array a zyx.
+
+c) Compila e dá erro ao tentar imprimir o tamanho do array.
+
+d) Compila e imprime 10.
+
+e) Compila e imprime 20.
+
+f) Compila e imprime 30.
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int zyx[][] = new int[3][10];
+        int[] x = new int[20];
+        int[] y = new int[10];
+        int[] z = new int[30];
+        zyx[0] = x;
+        zyx[1] = y;
+        zyx[2] = z;
+        System.out.println(zyx[2].length);
+    }
+}
+
+a) Não compila, erro ao declarar zyx.
+
+b) Não compila, erro ao atribuir arrays de tamanho diferente de 10 em zyx.
+
+c) Compila e dá erro ao tentar atribuir o segundo array a zyx.
+
+d) Compila e dá erro ao tentar imprimir o tamanho do array.
+
+e) Compila e imprime 10.
+
+f) Compila e imprime 20.
+
+g) Compila e imprime 30.
+
+4 - 
+
+class Test {
+    public static void main(String[] args) {
+        int[] id = new int[10];
+        id[0] = 1.0;
+        int[10][10] tb = new int[10][10];
+        int[][][] cb = new int[][][];
+    }
+}
+
+
+a) O código não compila.
+
+b) O código compila e dá erro em execução.
+
+c) O código compila e roda.
+
+Compila? Roda?
+
+6.3 Exercícios
+
+1 - 
+
+class A {
+    public static void main(String[] args) {
+        ArrayList<String> c = new ArrayList<String>();
+        c.add("a");
+        c.add("c");
+        System.out.println(c.remove("a"));
+    }
+}
+
+a) Não compila: erro ao declarar a ArrayList.
+b) Não compila: erro ao invocar remove.
+c) Compila e ao rodar imprime "a".
+d) Compila e ao rodar imprime true.
+e) Compila e ao rodar imprime false.
+
+2 -
+
+import java.util.ArrayList;
+
+class A {
+    public static void main(String[] args) {
+        ArrayList<String> c = new ArrayList<String>();
+        c.add("a");
+        c.add("c");
+        System.out.println(c.remove("a"));
+    }
+}
+
+a) Não compila: erro ao declarar a ArrayList.
+b) Não compila: erro ao invocar remove.
+c) Compila e ao rodar imprime "a".
+d) Compila e ao rodar imprime true.
+e) Compila e ao rodar imprime false.
+
+3 -
+
+import java.util.ArrayList;
+
+class A {
+    public static void main(String[] args) {
+        ArrayList<String> c = new ArrayList<String>();
+        c.add("a");
+        c.add("a");
+        System.out.println(c.remove("a"));
+        System.out.println(c.size());
+    }
+}
+
+a) Não compila: erro ao declarar a ArrayList.
+b) Não compila: erro ao invocar remove.
+c) Compila e ao rodar imprime "a" e 0.
+d) Compila e ao rodar imprime true e 0.
+e) Compila e ao rodar imprime "a" e 1.
+f) Compila e ao rodar imprime true e 1.
+g) Compila e ao rodar imprime "a" e 2.
+h) Compila e ao rodar imprime true e 2.
+
+4 - 
+
+import java.util.ArrayList;
+
+class A {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("a");list.add("b");
+        list.add("a");list.add("c");
+        list.add("a");list.add("b");
+        list.add("a");
+        System.out.println(list.lastIndexOf("b"));
+    }
+}
+
+a) Não compila.
+b) Compila e imprime -1.
+c) Compila e imprime 0.
+d) Compila e imprime 1.
+e) Compila e imprime 2.
+f) Compila e imprime 3.
+g) Compila e imprime 4.
+h) Compila e imprime 5.
+i) Compila e imprime 6.
+j) Compila e imprime 7.
+
+5 - 
+
+import java.util.ArrayList;
+
+class A {
+    public static void main(String[] args) {
+        ArrayList<String> l = new ArrayList<String>();
+        l.add("a");
+        l.add("b");
+        l.add(1, "amor");
+        l.add(3, "love");
+        System.out.println(l);
+        String[] array = l.toArray();
+        System.out.println(array[2]);
+    }
+}
+
+a) Não compila.
+b) Compila e imprime “amor”.
+c) Compila e imprime “b”.
+
+6 -
+
+import java.util.ArrayList;
+
+class A {
+    public static void main(String[] args) {
+        ArrayList<String> a = new ArrayList<String>();
+        ArrayList<String> b = new ArrayList<String>();
+        ArrayList<String> c = new ArrayList<String>();
+        b.add("a");
+        c.add("c");
+        b.add("b");
+        c.add("d");
+        a.addAll(b);
+        a.addAll(c);
+        System.out.println(a.get(0));
+        System.out.println(a.get(3));
+    }
+}
+
+a) Não compila
+b) Compila e imprime "a" e "d".
+c) Compila e imprime "c" e "b".
+d) Compila e não sabemos a ordem em que os elementos serão impressos.
+
+7 -
+
+import java.util.ArrayList;
+
+class A {
+    public static void main(String[] args) {
+        ArrayList<String> a = new ArrayList<String>();
+        a.add("a", 0);
+        a.add("b", 0);
+        a.add("c", 0);
+        a.add("d", 0);
+        System.out.println(a.get(0));
+        System.out.println(a.get(1));
+        System.out.println(a.get(2));
+        System.out.println(a.get(3));
+    }
+}
+
+a) Não compila.
+b) Compila e imprime "abcd".
+c) Compila e imprime "dcba".
+d) Compila e imprime "adcb".
+e) Compila e imprime "bcda".
+
+8 -
+
+import java.util.*;
+
+class A {
+    public static void main(String[] args) {
+        ArrayList<String> a = new ArrayList<String>();
+        a.add(0, "b");
+        a.add(0, "a");
+        for (Iterator<String> i = a.iterator(); i.hasNext(); i.next()) {
+            String element = i.next();
+            System.out.println(element);
+        }
+    }
+}
+
+a) Não compila.
+b) Compila e imprime "a".
+c) Compila e imprime "a" e "b".
+d) Compila e imprime "b" e "a".
+e) Compila e imprime "b".
+
+9 - 
+
+import java.util.ArrayList;
+
+class A {
+    public static void main(String[] args) {
+        ArrayList<String> ss = new ArrayList<String>();
+        ss.add("a");
+        ss.add("b");
+        ss.add("c");
+        ss.add("d");
+        for (String s : ss) {
+            if (s.equals("c")) s = "b";
+            else if (s.equals("b")) s = "c";
+        }
+        for (String s : ss) System.out.println(s);
+    }
+}
+
+a) Não compila, s é final por padrão.
+b) Compila e imprime "a, c, b, d".
+c) Compila e imprime "a, b, c, d".
+d) Compila e imprime "a, c, c, d".
+e) Compila e imprime "a, c, d, b".
+
+7.1 Exercícios
+
+1 -
+
+class A {
+    public static void main(String[] args) {
+        int a = 10;
+        while(a > 100)
+            a++;
+        System.out.println(a);
+    }
+}
+
+
+a) Não compila pois nunca entra no loop.
+b) Compila e imprime 99.
+c) Compila e imprime 100.
+d) Compila e imprime 101.
+e) Compila e imprime outro valor.
+
+2 -
+
+class A {
+    public static void main(String[] args) {
+        boolean run = true;
+        while(run) {
+            System.out.println(run);
+        }
+        System.out.println("finish");
+    }
+}
+
+a) Transformar a variável em final faz o código compilar.
+b) Colocar uma linha dentro do laço que faz run = false faz o código compilar.
+c) O código compila e roda em loop infinito.
+d) O código compila e roda, após algumas passagens pelo laço ele imprime uma exception e para.
+
+7.2 Exercícios
+
+1 - 
+
+class A {
+    public static void main(String[] args) {
+        for(;;) {
+            System.out.println("a");
+        }
+        System.out.println("b");
+    }
+}
+
+a) Não compila.
+b) Compila e imprime "a" infinitamente.
+c) Compila e imprime "b".
+d) Compila e imprime "a", depois "b", depois para.
+e) Compila, imprime "a" diversas vezes e depois joga um StackOverflowError.
+
+2 - 
+
+class A {
+    public static void main(String[] args) {
+        for(; false;) {
+            System.out.println("a");
+            break;
+        }
+        System.out.println("b");
+    }
+}
+
+a) Não compila.
+b) Compila e imprime "b".
+
+3 - 
+
+class A {
+    public static void main(String[] args) {
+        for(int i=0, int j=1; i<10; i++, j++)
+            System.out.println(i);
+    }
+}
+
+a) Não compila.
+b) Compila e imprime 0 até 9.
+c) Compila e imprime 0 até 10.
+d) Compila e imprime 1 até 10.
+e) Compila e imprime 1 até 11.
+
+4 - 
+
+class A {
+    public static void main(String[] args) {
+        for(int i=0, j=1; i<10 ;i++, j++)
+            System.out.println(i);
+    }
+}
+
+a) Não compila.
+b) Compila e imprime 0 até 9.
+c) Compila e imprime 0 até 10.
+d) Compila e imprime 1 até 10.
+e) Compila e imprime 1 até 11.
+
+5 - 
+
+class A {
+    public static void main(String[] args) {
+        for(int i=0; i<10, false; i++) {
+            System.out.println('a');
+        }
+        System.out.println('b');
+    }
+}
+
+a) Não compila.
+b) Compila e imprime 'a' e 'b'.
+
+6 - 
+
+class A {
+    public static void main(String[] args) {
+        for(int i=0; i<2; i++, System.out.println(i)) {
+            System.out.println(i);
+        }
+    }
+}
+
+a) Não compila.
+b) Compila e imprime 0 1 2.
+c) Compila e imprime 0 0 1 1 2 2.
+d) Compila e imprime 0 1 1 2 2.
+e) Compila e imprime 0 1 1 2.
+
+
+7.3 Exercícios
+
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        boolean i = false;
+        do {
+            System.out.println(i);
+        } while(i);
+    }
+}
+
+a) Não compila.
+b) Compila e imprime false.
+c) Compila e não imprime nada.
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        if(args.length < 10) {
+            do {
+                if(args.length > 2)
+                    return;
+            } while(true);
+        }
+        System.out.println("finished");
+    }
+}
+
+a) Não compila.
+b) Compila e entra em loop infinito caso seja passado zero, um ou dois argumentos. Não imprime nada caso 3 a 9 argumentos. Imprime ‘finished’ caso 10 ou mais argumentos.
+c) Compila e entra em loop infinito caso seja passado zero, um ou dois argumentos. Imprime ‘finished’ caso contrário.
+d) Compila e sempre entra em loop infinito.
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int i = 0;
+        do 
+            System.out.println(i);
+        while(i++ > 10);
+    }
+}
+
+a) Não compila.
+b) Compila e não imprime nada.
+c) Compila e imprime 0.
+d) Compila e imprime de 0 até 9.
+e) Compila e imprime de 0 até 10.
+f) Compila e não imprime nada.
+
+4 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int i = 0;
+        do 
+            System.out.println(i) 
+        while(i++ < 10);
+    }
+}
+
+a) Não compila.
+b) Compila e imprime de 0 até 9.
+c) Compila e imprime de 0 até 10.
+d) Compila e não imprime nada.
+
+5 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int i = 0;
+        do; while(i++ < 10);
+    }
+}
+
+a) Não compila.
+b) Compila e entra em loop infinito.
+c) Compila e sai.
+
+7.4 Exercícios
+
+1 - Qual o laço mais simples de ser usado quando desejamos iterar por duas coleções ao mesmo tempo?
+a) for
+b) while
+c) enhanced for
+d) do... while
+
+2 - Qual o melhor laço a ser usado para, dependendo do valor de um elemento, removê-lo de nossa lista?
+a) for
+b) enhanced for
+
+3 - Para todos os números entre i e 100 devo imprimir algo, sendo que, mesmo que i seja maior que 100, devo imprimir algo pelo menos uma vez. Qual laço devo usar?
+a) enhanced for
+b) do... while
+c) while
+
+4 - Qual o laço a ser usado caso queira executar um código eternamente?
+a) enhanced for
+b) for
+c) for ou while
+d) for ou while ou do...while
+e) while ou do...while
+
+5 - Qual laço deve ser usado para inicializar os valores de um array?
+a) enhanced for
+b) for
+
+7.5 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        outside: for(int a=0;a<30;a++)
+            for(int b=0;b<1;b++)
+                if(a+b==25) continue outside;
+                else if(a+b==20) break outside;
+                else if(a==0) break outside;
+                else System.out.println(a);
+    }
+}
+
+a) Não compila.
+
+b) Compila e imprime 1 até 29.
+
+c) Compila e não imprime nada.
+
+d) Compila e imprime 1 até 19, 21 até 24, 26 até 29.
+
+e) Compila e imprime 1 até 24, 26 até 29.
+
+f) Compila e imprime 1 até 19.
+
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        outside: for(int a=0;a<30;a++)
+            for(int b=0;b<1;b++)
+                if(a+b==25) continue outside;
+                else if(a+b==20) break;
+                else System.out.println(a);
+    }
+}
+
+a) Não compila.
+
+b) Compila e imprime 0 até 29.
+
+c) Compila e não imprime nada.
+
+d) Compila e imprime 0 até 19, 21 até 24, 26 até 29.
+
+e) Compila e imprime 0 até 24, 26 até 29.
+
+f) Compila e imprime 0 até 19.
+
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+
+class A {
+    public static void main(String[] args) {
+        int a = args.length;
+        int i = 0;
+        switch(a) {
+            case 0:
+            case 1:
+                for(i=0;i<15;i++, System.out.println(i))
+                    if(i==5) continue;
+                    if(i==15) break;
+            case 2:
+                System.out.println("2");
+        }
+        System.out.println("end");
+    }
+}
+
+a) Não compila.
+
+b) Compila e ao rodar com 0 argumentos imprime 0 até 14, 2, end.
+
+c) Compila e ao rodar com 0 argumentos imprime 1 até 15, 2, end.
+
+d) Compila e ao rodar com 0 argumentos imprime 0 até 4, 6 até 14, 2, end.
+
+e) Compila e ao rodar com 0 argumentos imprime 1 até 4, 6 até 15, end.
+
+f) Compila e ao rodar com 0 argumentos imprime 0 até 4, 6 até 9, 2, end.
+
+g) Compila e ao rodar com 0 argumentos imprime 1 até 4, 6 até 9, end.
+
+h) Compila e ao rodar com 0 argumentos imprime 1 até 4, 6 até 15, 2, end.
+
+i) Compila e ao rodar com 0 argumentos imprime 1 até 15, 2, end.
+
+j) Compila e ao rodar com 0 argumentos imprime 1 até 15, end.
+
+
+8.1 Exercícios
+
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        x(args.length);
+    }
+
+    static int x(final int l) {
+        for(int i=0;i<100;i++) {
+            switch(i) {
+                case l:
+                    System.out.println(l);
+                    if(l==i) return;
+                case 0:
+                    System.out.println(0);
+            }
+        }
+        System.out.println("end");
+        return -1;
+    }
+}
+
+a) Não compila.
+
+b) Compila e ao rodar com cinco parâmetros, imprime 0, 5 e end.
+
+c) Compila e ao rodar com cinco parâmetros, imprime 0, 5, -1 e end.
+
+d) Compila e ao rodar com cinco parâmetros, imprime 0 e 5.
+
+e) Compila e ao rodar com cinco parâmetros, imprime 0, 5 e -1.
+
+f) Compila e ao rodar com cinco parâmetros, imprime 0, 5, 0 e end.
+
+g) Compila e ao rodar com cinco parâmetros, imprime 0, 5, 0, -1 e end.
+
+h) Compila e ao rodar com cinco parâmetros, imprime 0 e 5.
+
+i) Compila e ao rodar com cinco parâmetros, imprime 0, 5, 0 e -1.
+
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        x(args.length);
+    }
+
+    static int x(final int l) {
+        for(int i=0;i<100;i++) {
+            switch(i) {
+                case l:
+                    System.out.println(l);
+                    if(l==i) return 3;
+                case 0:
+                    System.out.println(0);
+            }
+        }
+        System.out.println("End");
+        return -1;
+    }
+}
+
+a) Não compila.
+
+b) Compila e ao rodar com cinco parâmetros, imprime 0, 5 e End.
+
+c) Compila e ao rodar com cinco parâmetros, imprime 0, 5, -1 e End.
+
+d) Compila e ao rodar com cinco parâmetros, imprime 0 e 5.
+
+e) Compila e ao rodar com cinco parâmetros, imprime 0, 5 e -1.
+
+f) Compila e ao rodar com cinco parâmetros, imprime 0, 5, 0 e End.
+
+g) Compila e ao rodar com cinco parâmetros, imprime 0, 5, 0, -1 e End.
+
+h) Compila e ao rodar com cinco parâmetros, imprime 0 e 5.
+
+i) Compila e ao rodar com cinco parâmetros, imprime 0, 5, 0 e -1.
+
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        System.out.println(a(args.length));
+    }
+
+    static int a(int l) {
+        if(l<10) return b(l);
+        else return c();
+    }
+
+    static int b(int l) {
+        if(l<10) return b(l);
+        else return c();
+    }
+
+    static long c() {
+        return 3;
+    }
+}
+
+a) Não compila: erro ao invocar o método b.
+
+b) Não compila: erro ao invocar o método c.
+
+c) Não compila por um motivo não listado.
+
+d) Compila e, ao chamar com 15 argumentos, imprime 3.
+
+e) Compila e, ao chamar com 15 argumentos, entra em loop infinito.
+
+
+4 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        System.out.println(a(args.length)[0]);
+    }
+
+    static int[] a(int l) {
+        if(l==0) return new int[]{0, l};
+        else return new int[]{l, 0};
+    }
+}
+
+a) Não compila.
+
+b) Ao invocar com nenhum parâmetro, imprime 0.
+
+c) Ao invocar com 5 parâmetros, imprime 0.
+
+
+8.2 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        x();
+    }
+
+    static x() {
+        System.out.println("x");
+        y();
+    }
+
+    static y() {
+        System.out.println("y");
+    }
+}
+
+a) Não compila.
+
+b) Imprime x, y.
+
+c) Imprime y, x.
+
+d) Imprime x.
+
+e) Imprime y.
+
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        x();
+    }
+
+    static void x() {
+        System.out.println("x");
+        y();
+    }
+
+    static void y() {
+        System.out.println("y");
+    }
+}
+
+a) Não compila.
+
+b) Imprime x, y.
+
+c) Imprime y, x.
+
+d) Imprime x.
+
+e) Imprime y.
+
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    void y() {
+        this.z();
+    }
+
+    static void z() {
+        System.out.println("z");
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        new A().x();
+    }
+
+    static void x() {
+        new B().y();
+    }
+}
+
+a) Não compila ao tentar invocar y.
+
+b) Não compila ao tentar invocar z.
+
+c) Não compila ao tentar invocar x.
+
+d) Compila e imprime z.
+
+
+4 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    static void x() {
+        System.out.println("x");
+    }
+
+    static void y() {
+        System.out.println("y");
+    }
+}
+
+class A extends B {
+    public static void main(String[] args) {
+        this.x();
+        A.y();
+    }
+}
+
+a) Não compila, erro ao invocar x.
+
+b) Imprime x, y.
+
+c) Não compila, erro ao invocar y.
+
+
+5 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    static void x() {
+        System.out.println("x");
+    }
+
+    static void y() {
+        System.out.println("y");
+    }
+}
+
+class A extends B {
+    public static void main(String[] args) {
+        x();
+        A.y();
+    }
+}
+
+a) Não compila, erro ao invocar x.
+
+b) Imprime x, y.
+
+c) Não compila, erro ao invocar y.
+
+
+8.3 Exercícios
+
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int x = b(15);
+        System.out.println(x);
+        System.out.println(15);
+        System.out.println(15.0);
+    }
+
+    static int b(int i) { return i; }
+    static double b(int i) { return i; }
+}
+
+a) Não compila.
+
+b) Compila e imprime 15, 15, 15.
+
+c) Compila e imprime 15, 15, 15.0.
+
+d) Compila e imprime 15, 15.0, 15.0.
+
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int x = b(15);
+        System.out.println(x);
+        System.out.println(15);
+        System.out.println(15.0);
+    }
+
+    static int b(int i) { return i; }
+    static double b(double i) { return i; }
+}
+
+a) Não compila.
+
+b) Compila e imprime 15, 15, 15.
+
+c) Compila e imprime 15, 15, 15.0.
+
+d) Compila e imprime 15, 15.0, 15.0.
+
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        System.out.println("[]");
+    }
+
+    public static void main(String... args) {
+        System.out.println("...");
+    }
+}
+
+a) Não compila.
+
+b) Compila e imprime "[]".
+
+c) Compila e imprime "...".
+
+d) Compila e dá exception.
+
+
+4 = Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B{}
+class C{}
+class D extends B{}
+class A {
+    int a(D d) { return 1; }
+    int a(C c) { return 2; }
+    int a(B b) { return 3; }
+    int a(A a) { return 4; }
+
+    public static void main(String[] args) {
+        System.out.println(new A().a(new D()));
+    }
+}
+
+a) Não compila.
+
+b) Compila e imprime 1.
+
+c) Compila e imprime 2.
+
+d) Compila e imprime 3.
+
+e) Compila e imprime 4.
+
+
+5 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B{}
+class C{}
+class D extends B{}
+class A {
+    static int a(D d) { return 1; }
+    static int a(C c) { return 2; }
+    static int a(B b) { return 3; }
+    static int a(A a) { return 4; }
+
+    public static void main(String[] args) {
+        System.out.println(a(new D()));
+    }
+}
+
+a) Não compila.
+
+b) Compila e imprime 1.
+
+c) Compila e imprime 2.
+
+d) Compila e imprime 3.
+
+e) Compila e imprime 4.
+
+
+6 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B{}
+class C{}
+class D extends B{}
+class A {
+    static int a(D d) { return 1; }
+    static int a(C c) { return 2; }
+    static int a(B b) { return 3; }
+    static int a(A a) { return 4; }
+
+    public static void main(String[] args) {
+        System.out.println(a(new D()));
+    }
+}
+
+a) Não compila.
+
+b) Compila e imprime 1.
+
+c) Compila e imprime 2.
+
+d) Compila e imprime 3.
+
+e) Compila e imprime 4.
+
+
+7 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B{}
+class C{}
+class D extends B{}
+class A {
+    static int a(D d, B b) { return 1; }
+    static int a(C c, C c) { return 2; }
+    static int a(B b, B b) { return 3; }
+    static int a(A a, A a) { return 4; }
+
+    public static void main(String[] args) {
+        System.out.println(a(new D(), new D()));
+    }
+}
+
+a) Não compila.
+
+b) Compila e imprime 1.
+
+c) Compila e imprime 2.
+
+d) Compila e imprime 3.
+
+e) Compila e imprime 4.
+
+
+8 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B{}
+class C{}
+class D extends B{}
+class A {
+    static int a(D d, B b2) { return 1; }
+    static int a(C c, C c2) { return 2; }
+    static int a(B b, B b2) { return 3; }
+    static int a(A a, A a2) { return 4; }
+
+    public static void main(String[] args) {
+        System.out.println(a(new D(), new D()));
+    }
+}
+
+a) Não compila.
+
+b) Compila e imprime 1.
+
+c) Compila e imprime 2.
+
+d) Compila e imprime 3.
+
+e) Compila e imprime 4.
+
+
+8.4 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+   final String n;
+   
+   A() {
+      a();
+      n = "learning";
+   }
+   
+   void a() {
+      System.out.println("test");
+   }
+}
+
+class B extends A {
+   void a() {
+      System.out.println(n.length());
+   }
+
+   public static void main(String[] args) {
+      new B();
+   }
+}
+
+a) Não compila.
+b) Compila e imprime "test".
+c) Compila e imprime length.
+d) Compila e dá exception.
+e) Compila e não imprime nada.
+
+8.5 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B { 
+   B() { 
+      this(1); 
+   } 
+   B(int i) { 
+      this(); 
+   } 
+}
+
+class A {
+   public static void main(String[] args) {
+      new B();
+   }
+}
+
+a) Não compila.
+b) Compila e joga exception.
+c) Compila e não imprime nada.
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B() { 
+   B(A a) {} 
+   B() {} 
+}
+
+class C() { 
+   C(B b) {} 
+   C() {} 
+}
+
+class A {
+   public static void main(String[] args) {
+      new A(); 
+      new B(); 
+      new C();
+   }
+}
+
+a) Não compila ao invocar o construtor de A.
+b) Não compila ao invocar o construtor de B.
+c) Não compila ao invocar o construtor de C.
+d) Não compila na definição das classes B e C.
+e) Compila e joga exception.
+f) Compila e não imprime nada.
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B { 
+   B(A a) {} 
+   B() {} 
+}
+
+class C { 
+   C(B b) {} 
+   C() {} 
+}
+
+class A {
+   public static void main(String[] args) {
+      new A(); 
+      new B(); 
+      new C();
+   }
+}
+
+a) Não compila ao invocar o construtor de A.
+b) Não compila ao invocar o construtor de B.
+c) Não compila ao invocar o construtor de C.
+d) Não compila na definição das classes B e C.
+e) Compila e joga exception.
+f) Compila e não imprime nada.
+
+4 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B { 
+   B(A a) {} 
+   B() {} 
+}
+
+class C { 
+   C(B b) {} 
+   C() {} 
+}
+
+class A {
+   public static void main(String[] args) {
+      new C(new B(new A()));
+   }
+}
+
+a) Não compila ao invocar o construtor de A.
+b) Não compila ao invocar o construtor de B.
+c) Não compila ao invocar o construtor de C.
+d) Não compila na definição das classes B e C.
+e) Compila e joga exception.
+f) Compila e não imprime nada.
+
+5 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B { 
+   B(A a) {
+      new C(); 
+   } 
+   B() { 
+      new C(this);
+   } 
+}
+
+class C { 
+   C(B b) {
+      new B(new A());
+   } 
+   C() {
+      new B();
+   } 
+}
+
+class A {
+   public static void main(String[] args) {
+      new C(new B(new A()));
+   }
+}
+
+a) Não compila ao invocar o construtor de A.
+b) Não compila ao invocar o construtor de B.
+c) Não compila ao invocar o construtor de C.
+d) Não compila na definição das classes B e C.
+e) Compila e joga exception.
+f) Compila e não imprime nada.
+
+8.6 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o Test, com os arquivos a seguir nos diretórios adequados:
+
+import model.Client;
+
+class Test {
+   public static void main(String[] args) {
+      new Client("guilherme").print();
+   }
+}
+
+package model;
+
+public class Client {
+   private String name;
+
+   public Client(String name) {
+      this.name = name;
+   }
+
+   public void print() {
+      System.out.println(name);
+   }
+}
+
+a) Não compila: erro na classe Teste.
+b) Não compila: erro na classe Client.
+c) Erro de execução: método main.
+d) Roda e imprime “Guilherme”.
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+   private static int a(int b) {
+      return b(b) - 1;
+   }
+
+   private static int b(int b) {
+      return b - 1;
+   }
+
+   public static void main(String[] args) {
+      System.out.println(new A().a(5));
+   }
+}
+
+a) Não compila.
+b) Compila e imprime 3.
+c) Compila e dá erro de execução.
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+   private public int a(int b) {
+      return b(b) - 1;
+   }
+
+   private static int b(int b) {
+      return b - 1;
+   }
+
+   public static void main(String[] args) {
+      System.out.println(new A().a(5));
+   }
+}
+
+a) Não compila nas invocações de métodos.
+b) Não compila na declaração de variáveis e métodos.
+c) Compila e imprime 3.
+d) Compila e dá erro.
+
+4 - Escolha a opção adequada ao tentar compilar e rodar os arquivos a seguir, cada um em seu diretório adequado:
+
+package a;
+import b.*;
+
+public class A extends B {
+   protected int a(String s) {
+      return 2;
+   }
+}
+
+package b;
+
+public class B {
+   public int a(Object s) {
+      return 1;
+   }
+}
+
+import a.*;
+import b.*;
+
+class Test {
+   public static void main(String[] args) {
+      System.out.println(new A().a("a"));
+   }
+}
+
+a) Não compila.
+b) Imprime 1.
+c) Imprime 2.
+d) Erro em execução.
+
+5 - Escolha a opção adequada ao tentar compilar e rodar os arquivos a seguir, cada um em seu diretório adequado:
+
+package a;
+import b.*;
+
+public class A extends B {
+   protected int a(String s) {
+      return 2;
+   }
+}
+
+package b;
+
+public class B {
+   public int a(Object s) {
+      return 1;
+   }
+}
+
+import a.*;
+import b.*;
+
+class C {
+   public static void main(String[] args) {
+      System.out.println(new A().a("a"));
+   }
+}
+
+a) Não compila.
+b) Imprime 1.
+c) Imprime 2.
+d) Erro em execução.
+
+6 - Escolha a opção adequada ao tentar compilar e rodar os arquivos a seguir, cada um em seu diretório adequado:
+
+package a;
+import b.*;
+
+public class A extends B {
+   protected int a(String s) {
+      return 2;
+   }
+}
+
+package b;
+
+public class B {
+   default int a(Object s) {
+      return 1;
+   }
+}
+
+import a.*;
+import b.*;
+
+class C {
+   public static void main(String[] args) {
+      System.out.println(new A().a("a"));
+   }
+}
+
+a) Não compila.
+b) Imprime 1.
+c) Imprime 2.
+d) Erro em execução.
+
+7 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+   static int bs = 0;
+   final int b = ++bs;
+
+   private B() {}
+
+   static B b() {
+      return new B();
+   }
+}
+
+class A {
+   public static void main(String[] args) {
+      System.out.println(B.b().b);
+   }
+}
+
+a) Não compila.
+b) Compila e imprime 1.
+c) Compila e imprime 0.
+d) Compila e dá erro de execução.
+
+8.7 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B{
+    private int b;
+    public int getB() { return b; }
+    public void setB(int b) { this.b= b; }
+}
+
+class A {
+    public static void main(String[] args) {
+        new B().setB(5);
+        System.out.println(new B().getB());
+    }
+}
+
+a) Não compila.  
+b) Compila e imprime 0.  
+c) Compila e imprime 5.
+
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    private int b;
+    public int getB() { return b; }
+    public void setB(int b) { this.b= b; }
+}
+
+class A {
+    public static void main(String[] args) {
+        B b = new B();
+        b.setB(5);
+        System.out.println(b.getB());
+    }
+}
+
+a) Não compila.  
+b) Compila e imprime 0.  
+c) Compila e imprime 5.
+
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+class B{
+    private int b;
+    public int getB() { return b; }
+    public void setB(int b) { b= b; }
+}
+
+class A {
+    public static void main(String[] args) {
+        B b = new B();
+        b.setB(5);
+        System.out.println(b.getB());
+    }
+}
+
+a) Não compila.  
+b) Compila e imprime 0.  
+c) Compila e imprime 5.
+
+
+4 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B{
+    int b;
+    public void setB(int b) { b= b; }
+}
+
+class A {
+    public static void main(String[] args) {
+        B b = new B();
+        b.setB(5);
+        System.out.println(b.b);
+    }
+}
+
+a) Não compila, pois não é possível ter setter sem getter.  
+b) Compila e imprime 0.  
+c) Compila e imprime 5.
+
+
+5 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B{
+    private final int b;
+    B(int b) { this.b = b;}
+    public int getB() { return b; }
+    public void setB(int b) { b= b; }
+}
+
+class A {
+    public static void main(String[] args) {
+        B b = new B(10);
+        b.setB(5);
+        System.out.println(b.getB());
+    }
+}
+
+a) Não compila.  
+b) Compila e imprime 0.  
+c) Compila e imprime 5.  
+d) Compila e imprime 10.
+
+8.8 Exercícios
+
+1 -  Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+  public static void main(String[] args) {
+    int i = 150;
+    i = ++s(i);
+    System.out.println(i);
+  }
+
+  static int s(int i) {
+    return ++i;
+  }
+}
+
+a) Não compila.  
+b) Compila e imprime 150.  
+c) Compila e imprime 151.  
+d) Compila e imprime 152.  
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+  public static void main(String[] args) {
+    int[] i = {150, 151};
+    i = s(i);
+    System.out.println(i[1]);
+  }
+
+  static int[] s(int[] i) {
+    int[] j = {i[0], i[1]};
+    i[1]++;
+    return j;
+  }
+}
+
+a) Não compila.  
+b) Compila e imprime 150.  
+c) Compila e imprime 151.  
+d) Compila e imprime 152.  
+e) Compila e imprime 153.
+
+
+9.1 Exercícios
+
+
+1 - Compila?
+
+class A {
+    public void method(long l) {
+    }
+}
+
+class B extends A {
+    protected void method(int i) {
+    }
+}
+
+2 - Compila? 
+
+import java.io.*;
+
+class Vehicle {
+    protected void turnon() throws IOException {
+    }
+}
+
+class Car extends Vehicle {
+    public void turnon() throws FileNotFoundException {
+    }
+}
+
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B extends C {
+    int m(int a) {
+        return 1;
+    }
+}
+
+class C extends A {
+    int m(double b) {
+        return 3;
+    }
+}
+
+class A extends B {
+    int m(String c) {
+        return 3;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new C().m(3));
+    }
+}
+
+a) O código não compila.
+b) Compila e imprime 1.
+c) Compila e imprime 2.
+d) Compila e imprime 3.
+e) Compila e imprime 1, 2, 3.
+
+4 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    int m(int a) {
+        return 1;
+    }
+}
+
+class C {
+    int m(double b) {
+        return 2;
+    }
+}
+
+class A extends B, C {
+    public static void main(String[] args) {
+        System.out.println(new C().m(3));
+    }
+}
+
+a) O código não compila.
+b) Compila e imprime 1.
+c) Compila e imprime 2.
+d) Compila e imprime 1, 2.
+
+5 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    private B() {
+    }
+
+    static B B(String s) {
+        return new B();
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        B b = B.B("t");
+    }
+}
+
+a) Não compila.
+b) Compila e imprime “t”.
+c) Compila e não imprime nada.
+d) Compila e joga uma exception.
+
+6 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    private B() {
+    }
+
+    static B B(String s) {
+        return new B();
+    }
+}
+
+class A extends B {
+    public static void main(String[] args) {
+        B b = B.B("t");
+    }
+}
+
+Qual a saída esperada?
+a) Não compila.
+b) Compila e imprime “t”.
+c) Compila e não imprime nada.
+d) Compila e joga uma exception.
+
+7 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    private String s;
+
+    protected B() {
+    }
+
+    static A B(String s) {
+        return new A();
+    }
+}
+
+class A extends B {
+    A(String s) {
+        this.s = s;
+    }
+
+    public static void main(String[] args) {
+        B b = A.B("t");
+        System.out.println(b.s);
+    }
+}
+
+a) Não compila.
+b) Compila e imprime “t”.
+c) Compila e não imprime nada.
+d) Compila e joga uma exception.
+
+8 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    protected String s;
+
+    protected B() {
+    }
+
+    static A B(String s) {
+        return new A(s);
+    }
+}
+
+class A extends B {
+    A(String s) {
+        this.s = s;
+    }
+
+    public static void main(String[] args) {
+        A b = A.B("t");
+        System.out.println(b.s);
+    }
+}
+
+a) Não compila.
+b) Compila e imprime “t”.
+c) Compila e não imprime nada.
+d) Compila e joga uma exception.
+
+
+9.2 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+}
+
+class C extends B {
+}
+
+class A {
+    public static void main(String[] args) {
+        new C().x();
+    }
+}
+
+a) Não compila.  
+b) Compila e imprime ‘b‘.  
+c) Compila e imprime ‘c‘.  
+d) Compila e não imprime nada.  
+e) Compila e dá exception.  
+f) Compila e entra em loop.
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+import java.io.*;
+
+class B {
+}
+
+class C extends B {
+}
+
+class A {
+    public static void main(String[] args) throws IOException {
+        new C().x();
+    }
+}
+
+a) Não compila.  
+b) Compila e imprime ‘b‘.  
+c) Compila e imprime ‘c‘.  
+d) Compila e não imprime nada.  
+e) Compila e dá exception.  
+f) Compila e entra em loop.
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+import java.io.*;
+
+class B {
+}
+
+class C extends B {
+}
+
+class A {
+    public static void main(String[] args) throws IOException {
+        new C().x(3.2);
+    }
+}
+
+a) Não compila.  
+b) Compila e imprime ‘b‘.  
+c) Compila e imprime ‘c‘.  
+d) Compila e não imprime nada.  
+e) Compila e dá exception.  
+f) Compila e entra em loop.
+
+4 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+import java.io.*;
+
+class B {
+}
+
+class C {
+}
+
+class A {
+    public static void main(String[] args) throws IOException {
+        new C().x(3.2);
+    }
+}
+
+a) Não compila.  
+b) Compila e imprime ‘b‘.  
+c) Compila e imprime ‘c‘.  
+d) Compila e não imprime nada.  
+e) Compila e dá exception.  
+f) Compila e entra em loop.
+
+5 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+import java.io.*;
+
+interface B {
+}
+
+class C implements B {
+}
+
+class A {
+    public static void main(String[] args) throws IOException {
+        new C().x(3);
+    }
+}
+
+a) Não compila.  
+b) Compila e imprime ‘b‘.  
+c) Compila e imprime ‘c‘.  
+d) Compila e não imprime nada.  
+e) Compila e dá exception.  
+f) Compila e entra em loop.
+
+6 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+import java.io.*;
+
+class B {
+}
+
+abstract class C extends B {
+}
+
+abstract class D extends C {
+}
+
+class E extends D {
+}
+
+class A {
+    public static void main(String[] args) throws IOException {
+        new E().x(32);
+    }
+}
+
+a) Não compila.  
+b) Compila e imprime ‘b‘.  
+c) Compila e imprime ‘c‘.  
+d) Compila e imprime ‘d‘.  
+e) Compila e não imprime nada.  
+f) Compila e dá exception.  
+g) Compila e entra em loop.
+
+9.3 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class D extends C {
+    void x() { System.out.println(1); }
+}
+
+class C extends B {
+    void x() { System.out.println(2); }
+}
+
+class B {
+    void x() { System.out.println(3); }
+
+    void y(B b) {
+        b.x();
+    }
+
+    void y(C c) {
+        c.x();
+    }
+
+    void y(D d) {
+        d.x();
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        new B().y(new C());
+    }
+}
+
+a) Não compila.  
+b) Compila e imprime 1.  
+c) Compila e imprime 2.  
+d) Compila e imprime 3.
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class D extends C {
+    void x() { System.out.println(1); }
+}
+
+class C extends B {
+    void x() { System.out.println(2); }
+}
+
+class B {
+    void x() { System.out.println(3); }
+
+    void y(B b) {
+        b.x();
+    }
+
+    void y(C c) {
+        c.x();
+    }
+
+    void y(D d) {
+        d.x();
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        new D().y(new C());
+    }
+}
+
+a) Não compila.  
+b) Compila e imprime 1.  
+c) Compila e imprime 2.  
+d) Compila e imprime 3.
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class D extends C {
+    void x() { System.out.println(1); }
+
+    void y(C b) {
+        x();
+    }
+}
+
+class C extends B {
+    void x() { System.out.println(2); }
+}
+
+class B {
+    void x() { System.out.println(3); }
+
+    void y(B b) {
+        b.x();
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        new D().y(new C());
+    }
+}
+
+a) Não compila.  
+b) Compila e imprime 1.  
+c) Compila e imprime 2.  
+d) Compila e imprime 3.
+
+4 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+
+class D extends C {
+    void x() { System.out.println(1); }
+
+    void y(C b) {
+        x();
+    }
+}
+
+class C extends B {
+    void x() { System.out.println(2); }
+}
+
+class B {
+    void x() { System.out.println(3); }
+
+    void y(B b) {
+        b.x();
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        new D().y(new D());
+    }
+}
+
+a) Não compila.  
+b) Compila e imprime 1.  
+c) Compila e imprime 2.  
+d) Compila e imprime 3.
+
+5 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+package savings;
+
+public class SavingsAccount extends model.Account {
+    void close() {
+        System.out.println("closing savings");
+    }
+}
+
+package model;
+
+public class Account {
+    void close() {
+        System.out.println("closing base");
+    }
+}
+
+package code;
+
+class A {
+    public static void main(String[] args) {
+        new Account().close();
+    }
+}
+
+a) Não compila.  
+b) Compila e roda jogando exception.  
+c) Compila e roda, imprimindo ‘closing savings‘.  
+d) Compila e roda, imprimindo ‘closing base‘.
+
+6 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+package savings;
+
+public class SavingsAccount extends model.Account {
+    void close() {
+        System.out.println("closing savings");
+    }
+}
+
+package model;
+
+public class Account {
+    public void close() {
+        System.out.println("closing base");
+    }
+}
+
+package code;
+
+class A {
+    public static void main(String[] args) {
+        new Account().close();
+    }
+}
+
+a) Não compila.  
+b) Compila e roda jogando exception.  
+c) Compila e roda, imprimindo ‘closing savings‘.  
+d) Compila e roda, imprimindo ‘closing base‘.
+
+7 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+package savings;
+
+public class SavingsAccount extends model.Account {
+    void close() {
+        System.out.println("closing savings");
+    }
+}
+
+package model;
+
+public class Account {
+    protected void close() {
+        System.out.println("closing base");
+    }
+}
+
+package code;
+
+class A {
+    public static void main(String[] args) {
+        new Account().close();
+    }
+}
+
+a) Não compila.  
+b) Compila e roda jogando exception.  
+c) Compila e roda, imprimindo ‘closing savings‘.  
+d) Compila e roda, imprimindo ‘closing base‘.
+
+8 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+package savings;
+
+public class SavingsAccount extends model.Account {
+    public void close() {
+        System.out.println("closing savings");
+    }
+}
+
+package model;
+
+public class Account {
+    public void close() {
+        System.out.println("closing base");
+    }
+}
+
+package code;
+
+class A {
+    public static void main(String[] args) {
+        Account c = new SavingsAccount();
+        c.close();
+    }
+}
+
+a) Não compila.  
+b) Compila e roda jogando exception.  
+c) Compila e roda, imprimindo ‘closing savings‘.  
+d) Compila e roda, imprimindo ‘closing base‘.
+
+9 - O que acontece com o código a seguir?
+
+interface Vehicle {
+    int getSpeed();
+    void turnon();
+}
+
+abstract class Car implements Vehicle {
+    public void turnon() {
+        System.out.println("on!");
+    }
+}
+
+class ConcreteCar extends Car implements Vehicle {
+    public int getSpeed() {
+        return 1;
+    }
+}
+
+a) Não compila.  
+b) Compila e roda, imprimindo 'on!'.  
+c) Compila e roda, mas não imprime nada.  
+d) Compila, mas gera uma exception ao rodar.
+
+
+9.4 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+interface Z {}
+interface W {};
+interface Y extends Z, W {}
+class B {}
+class C extends B implements Y {}
+class D extends B implements Z, W {}
+class E extends C {}
+class A {
+    public static void main(String[] args) {
+        B b = new C();
+    }
+}
+
+a) Não compila na definição das classes e interfaces.  
+b) Não compila dentro do método main.  
+c) Compila e roda sem exception.  
+d) Compila e roda dando exception.
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+interface Z {}
+interface W {}
+interface Y extends Z, W {}
+class B {}
+class C extends B implements Y {}
+class D extends B implements Z, W {}
+class E extends C {}
+class A {
+    public static void main(String[] args) {
+        C c = (C) new B();
+    }
+}
+
+a) Não compila na definição das classes e interfaces.  
+b) Não compila dentro do método main.  
+c) Compila e roda sem exception.  
+d) Compila e roda dando exception.
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+interface Z {}
+interface W {}
+interface Y extends Z, W {}
+class B {}
+class C extends B implements Y {}
+class D extends B implements Z, W {}
+class E extends C {}
+class A {
+    public static void main(String[] args) {
+        Y y = new D();
+    }
+}
+
+a) Não compila na definição das classes e interfaces.  
+b) Não compila dentro do método main.  
+c) Compila e roda sem exception.  
+d) Compila e roda dando exception.
+
+4 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+interface Z {}
+interface W {}
+interface Y extends Z, W {}
+class B {}
+class C extends B implements Y {}
+class D extends B implements Z, W {}
+class E extends C {}
+class A {
+    public static void main(String[] args) {
+        Y y = (Y) new D();
+    }
+}
+
+a) Não compila na definição das classes e interfaces.  
+b) Não compila dentro do método main.  
+c) Compila e roda sem exception.  
+d) Compila e roda dando exception.
+
+5 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+interface Z {}
+interface W {}
+interface Y extends Z, W {}
+class B {}
+class C extends B implements Y {}
+class D extends B implements Z, W {}
+class E extends C {}
+class A {
+    public static void main(String[] args) {
+        Z z = (Z) (B) new D();
+    }
+}
+
+a) Não compila na definição das classes e interfaces.  
+b) Não compila dentro do método main.  
+c) Compila e roda sem exception.  
+d) Compila e roda dando exception.
+
+6 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+interface Z {}
+interface W {}
+interface Y extends Z, W {}
+class B {}
+class C extends B implements Y {}
+class D extends B implements Z, W {}
+class E extends C {}
+class A {
+    public static void main(String[] args) {
+        Y y = (Y) new A();
+    }
+}
+
+a) Não compila na definição das classes e interfaces.  
+b) Não compila dentro do método main.  
+c) Compila e roda sem exception.  
+d) Compila e roda dando exception.
+
+7 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+interface Z {}
+interface W {}
+interface Y extends Z, W {}
+class B {}
+class C extends B implements Y {}
+class D extends B implements Z, W {}
+class E extends C {}
+class A {
+    public static void main(String[] args) {
+        D d = (D) (Y) (B) new D();
+    }
+}
+
+a) Não compila na definição das classes e interfaces.  
+b) Não compila dentro do método main.  
+c) Compila e roda.  
+
+8 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+interface Z {}
+interface W {}
+interface Y extends Z, W {}
+class B {}
+class C extends B implements Y {}
+class D extends B implements Z, W {}
+class E extends C {}
+class A {
+    public static void main(String[] args) {
+        System.out.println(((B) (Z) (W) (Y) new D()) instanceof D);
+    }
+}
+
+a) Não compila na definição das classes e interfaces.  
+b) Não compila dentro do método main.  
+c) Compila e imprime true.  
+d) Compila e imprime false.
+
+9 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+interface Z {}
+interface W {}
+interface Y extends Z, W {}
+class B {}
+class C extends B implements Y {}
+class D extends B implements Z, W {}
+class E extends C {}
+class A {
+    public static void main(String[] args) {
+        System.out.println(((B) (Z) (W) (Y) new D()) instanceof D);
+    }
+}
+
+a) Não compila na definição das classes e interfaces.  
+b) Não compila dentro do método main.  
+c) Compila e imprime true.  
+d) Compila e imprime false.  
+e) Compila mas lança exception.
+
+
+9.5 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    int x = 1;
+}
+
+class A extends B {
+    static int x = 2;
+    
+    public static void main(String[] args) {
+        System.out.println(x);
+    }
+}
+
+a) Não compila.
+b) Compila e imprime 1.
+c) Compila e imprime 2.
+d) Compila e dá exception.
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    int x = 1;
+}
+
+class A extends B {
+    static int x = 2;
+    
+    public static void main(String[] args) {
+        System.out.println(this.x);
+    }
+}
+
+a) Não compila.
+b) Compila e imprime 1.
+c) Compila e imprime 2.
+d) Compila e dá exception.
+
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    int x = 1;
+}
+
+class A extends B {
+    static int x = 2;
+    
+    public static void main(String[] args) {
+        System.out.println(super.x);
+    }
+}
+
+a) Não compila.
+b) Compila e imprime 1.
+c) Compila e imprime 2.
+d) Compila e dá exception.
+
+
+4 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    int x = 1;
+}
+
+class A extends B {
+    static int x = 2;
+    
+    public static void main(String[] args) {
+        System.out.println(new A().super.x);
+    }
+}
+
+a) Não compila.
+b) Compila e imprime 1.
+c) Compila e imprime 2.
+d) Compila e dá exception.
+
+
+5 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    void B() {
+    }
+    
+    void B(String s) {
+        this();
+        this(s);
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        B b = new B();
+    }
+}
+
+a) Não compila.
+b) Compila e dá exception.
+c) Compila e não imprime nada.
+d) Compila e entra em loop infinito.
+
+
+6 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    B() {
+    }
+    
+    B(String s) {
+        this();
+        this(s);
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        B b = new B();
+    }
+}
+
+a) Não compila.
+b) Compila e dá exception.
+c) Compila e não imprime nada.
+d) Compila e entra em loop infinito.
+
+
+7 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    B() {
+    }
+    
+    B(String s) {
+        this();
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        B b = new B();
+    }
+}
+
+a) Não compila.
+b) Compila e dá exception.
+c) Compila e não imprime nada.
+d) Compila e entra em loop infinito.
+
+
+8 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    B() {
+    }
+    
+    B(String s) {
+        this();
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        String s = null;
+        B b = new B(s);
+    }
+}
+
+a) Não compila.
+b) Compila e dá exception.
+c) Compila e não imprime nada.
+d) Compila e entra em loop infinito.
+
+
+9 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    int x() { return y(); }
+    
+    int y() { return 3; }
+}
+
+class C extends B {
+    C() {
+        this(x());
+    }
+    
+    C(int i) {
+        System.out.println(i);
+    }
+    
+    int y() { return 2; }
+}
+
+class A {
+    public static void main(String[] args) {
+        new C();
+    }
+}
+
+a) Não compila.
+b) Compila e imprime ‘2‘.
+c) Compila e imprime ‘3‘.
+
+
+10 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class B {
+    int x() { return y(); }
+    
+    int y() { return 3; }
+}
+
+class C extends B {
+    C() {
+        super();
+        z(x());
+    }
+    
+    void z(int i) {
+        System.out.println(i);
+    }
+    
+    int y() { return 2; }
+}
+
+class A {
+    public static void main(String[] args) {
+        new C();
+    }
+}
+
+a) Não compila.
+b) Compila e imprime ‘2‘.
+c) Compila e imprime ‘3‘.
+
+9.6 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+abstract class B {
+    void x() {
+        System.out.println(y());
+    }
+
+    abstract int y();
+}
+
+class C extends B {
+    int y() {
+        return 1;
+    }
+}
+
+class D extends C {
+    int y() {
+        return 2;
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        D d = (D) (C) new D();
+        d.x();
+    }
+}
+
+a) Não compila.  
+b) Compila e imprime ‘1‘.  
+c) Compila e imprime ‘2‘.  
+d) Compila e roda com exception.
+
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+abstract class B {
+    abstract void x() {
+        System.out.println(y());
+    }
+
+    abstract int y();
+}
+
+class C extends B {
+    int y() {
+        return 1;
+    }
+}
+
+class D extends C {
+    int y() {
+        return 2;
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        D d = (D) (C) new D();
+        d.x();
+    }
+}
+
+a) Não compila.  
+b) Compila e imprime ‘1‘.  
+c) Compila e imprime ‘2‘.  
+d) Compila e roda com exception.
+
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+abstract class B {
+    void x() {
+        System.out.println(y());
+    }
+
+    abstract int y();
+}
+
+abstract class C extends B {
+    abstract int y();
+}
+
+class D extends C {
+    int y() {
+        return 1;
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        D d = (D) (C) new D();
+        d.x();
+    }
+}
+
+a) Não compila.  
+b) Compila e imprime ‘1‘.  
+c) Compila e imprime ‘2‘.  
+d) Compila e roda com exception.
+
+
+4 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+abstract class B {
+    void x() {
+        System.out.println(y());
+    }
+
+    int y() {
+        return 2;
+    }
+}
+
+abstract class C extends B {
+    abstract int y();
+}
+
+class D extends C {
+    int y() {
+        return 1;
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        D d = (D) (C) new D();
+        d.x();
+    }
+}
+
+a) Não compila.  
+b) Compila e imprime ‘1‘.  
+c) Compila e imprime ‘2‘.  
+d) Compila e roda com exception.
+
+
+5 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+abstract class B {
+    void x() {
+        System.out.println(y());
+    }
+
+    final int y() {
+        return 2;
+    }
+}
+
+abstract class C extends B {
+    int y() {
+        return 3;
+    }
+}
+
+class D extends C {
+    int y() {
+        return 1;
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        D d = (D) (C) new D();
+        d.x();
+    }
+}
+
+a) Não compila.  
+b) Compila e imprime ‘1‘.  
+c) Compila e imprime ‘2‘.  
+d) Compila e roda with exception.
+
+
+6 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+abstract class B {
+    void x() {
+        System.out.println(y());
+    }
+
+    Object y() {
+        return "a";
+    }
+}
+
+abstract class C extends B {
+    abstract String y();
+}
+
+class D extends C {
+    String y() {
+        return "b";
+    }
+}
+
+class A {
+    public static void main(String[] args) {
+        D d = (D) (C) new D();
+        d.x();
+    }
+}
+
+a) Não compila.  
+b) Compila e imprime ‘a‘.  
+c) Compila e imprime ‘b‘.  
+d) Compila e roda with exception.
+
+
+10.1 Exercícios
+
+1 - Dentre as classes a seguir qual delas não é checked?
+a) java.io.IOException
+b) java.sql.SQLException
+c) java.lang.Exception
+d) java.lang.IndexOutOfBoundsException
+e) java.io.FileNotFoundException
+
+10.2 Exercícios
+
+1 - Exception é um mecanismo para...
+a) tratar entrada de dados do usuário.
+b) que você pode usar para determinar o que fazer quando algo inesperado acontece.
+c) que a VM usa para fechar o programa caso algo inesperado aconteça.
+d) controlar o fluxo da aplicação.
+e) separar o tratamento de erros da lógica principal.
+
+2 - De que maneira a API de exceptions pode ajudar a melhorar o código de
+seu programa?
+Escolha 2 opções:
+a) Permitindo separar o tratamento de erro da lógica do programa.
+b) Permitindo tratar o erro no mesmo ponto onde ele ocorre.
+c) Permitindo estender as classes que já existem e criar novas exceptions.
+d) Disponibilizando várias classes com todas as exceptions possíveis
+prontas.
+e) Aumentando a segurança da aplicação disponibilizando os erros nos
+logs.
+
+10.3 Exercícios
+
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        String name;
+        try {
+            name.toLowerCase();
+            System.out.println("a");
+        } catch(NullPointerException ex) {
+            System.out.println("b");
+        }
+        System.out.println("c");
+    }
+}
+
+a) Não compila.  
+b) Compila e, ao rodar, imprime “abc”.  
+c) Compila e, ao rodar, imprime “bc”.  
+d) Compila e, ao rodar, imprime “a”.  
+e) Compila e, ao rodar, imprime “b”.
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        String name = null;
+        try {
+            name.toLowerCase();
+            System.out.println("a");
+        } catch(NullPointerException ex) {
+            System.out.println("b");
+        }
+        System.out.println("c");
+    }
+}
+
+a) Não compila.  
+b) Compila e, ao rodar, imprime “abc”.  
+c) Compila e, ao rodar, imprime “bc”.  
+d) Compila e, ao rodar, imprime “a”.  
+e) Compila e, ao rodar, imprime “b”.
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        String name = null;
+        try {
+            name.toLowerCase();
+            System.out.println("a");
+        } catch(NullPointerException ex) {
+            System.out.println("b");
+        } finally {
+            System.out.println("c");
+        }
+        System.out.println("d");
+    }
+}
+
+a) Não compila.  
+b) Compila e, ao rodar, imprime “abcd”.  
+c) Compila e, ao rodar, imprime “bcd”.  
+d) Compila e, ao rodar, imprime “ac”.  
+e) Compila e, ao rodar, imprime “bc”.  
+f) Compila e, ao rodar, imprime “ad”.  
+g) Compila e, ao rodar, imprime “bd”.
+
+10.4
+
+1 - Qual classe podemos colocar no código a seguir para que ele compile?
+
+import java.io.*;
+
+class X {
+    InputStream y() throws FileNotFoundException {
+        return new FileInputStream("a.txt");
+    }
+
+    void z() throws FileNotFoundException {
+        InputStream is = y();
+        is.close();
+    }
+}
+
+* java.io.IOException * java.sql.SQLException *
+java.lang.Exception * java.lang.IndexOutOfBoundsException
+* java.io.FileNotFoundException
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    void m2() {
+        System.out.println("e");
+        int[][] x = new int[15][20];
+        System.out.println("f");
+    }
+
+    void m() {
+        System.out.println("c");
+        m2();
+        System.out.println("d");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("a");
+        new A().m();
+        System.out.println("b");
+    }
+
+a) Não compila. 
+b) Compila e imprime acefdb. 
+c) Compila e imprime ace e joga uma Exception. 
+d) Compila e imprime acedb e joga uma Exception. 
+e) Compila e imprime ace, joga uma Exception e imprime db.
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    void m2() {
+        System.out.println("e");
+        int[] x = new int[15];
+        x[20] = 13;
+        System.out.println("f");
+    }
+
+    void m() {
+        System.out.println("c");
+        m2();
+        System.out.println("d");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("a");
+        new A().m();
+        System.out.println("b");
+    }
+
+a) Não compila. 
+b) Compila e imprime acefdb. 
+c) Compila e imprime ace e joga uma Exception. 
+d) Compila e imprime acedb e joga uma Exception. 
+e) Compila e imprime ace, joga uma Exception e imprime db.
+
+4 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir,
+sem que o arquivo exista?
+
+class A {
+    void m2() {
+        System.out.println("e");
+        new java.io.FileInputStream("a.txt");
+        System.out.println("f");
+    }
+
+    void m() {
+        System.out.println("c");
+        m2();
+        System.out.println("d");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("a");
+        new A().m();
+        System.out.println("b");
+    }
+
+a) Não compila. 
+b) Compila e imprime acefdb. 
+c) Compila e imprime ace e joga uma Exception. 
+d) Compila e imprime acedb e joga uma Exception. 
+e) Compila e imprime ace, joga uma Exception e imprime db.
+
+
+5 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir,
+sem que o arquivo exista?
+
+class A {
+    void m2() throws java.io.FileNotFoundException {
+        System.out.println("e");
+        new java.io.FileInputStream("a.txt");
+        System.out.println("f");
+    }
+
+    void m() throws java.io.IOException {
+        System.out.println("c");
+        m2();
+        System.out.println("d");
+    }
+
+    public static void main(String[] args) throws java.io.FileNotFoundException {
+        System.out.println("a");
+        new A().m();
+        System.out.println("b");
+    }
+
+a) Não compila. 
+b) Compila e imprime acefdb. 
+c) Compila e imprime ace e joga uma Exception. 
+d) Compila e imprime acedb e joga uma Exception. 
+e) Compila e imprime ace, joga uma Exception e imprime db.
+
+6 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir,
+sem que o arquivo exista?
+
+class A {
+    void m2() throws java.io.FileNotFoundException {
+        System.out.println("e");
+        new java.io.FileInputStream("a.txt");
+        System.out.println("f");
+    }
+
+    void m() throws java.io.FileNotFoundException {
+        System.out.println("c");
+        m2();
+        System.out.println("d");
+    }
+
+    public static void main(String[] args) throws java.io.IOException {
+        System.out.println("a");
+        new A().m();
+        System.out.println("b");
+    }
+
+a) Não compila. 
+b) Compila e imprime acefdb. 
+c) Compila e imprime ace e joga uma Exception. 
+d) Compila e imprime acedb e joga uma Exception. 
+e) Compila e imprime ace, joga uma Exception e imprime db.
+
+7 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir,
+sem que o arquivo exista?
+
+class A {
+    void m2() throws java.io.FileNotFoundException {
+        System.out.println("e");
+        new java.io.FileInputStream("a.txt");
+        System.out.println("f");
+    }
+
+    void m() throws java.io.FileNotFoundException {
+        System.out.println("c");
+        try {
+            m2();
+        } catch (java.io.FileNotFoundException ex) {
+        }
+        System.out.println("d");
+    }
+
+    public static void main(String[] args) throws java.io.IOException {
+        System.out.println("a");
+        new A().m();
+        System.out.println("b");
+    }
+
+a) Não compila. 
+b) Compila e imprime acefdb. 
+c) Compila e imprime ace e joga uma Exception. 
+d) Compila e imprime acedb e joga uma Exception. 
+e) Compila e imprime acedb. 
+f) Compila e imprime ace, joga uma Exception e imprime db.
+
+
+8 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir,
+sem que o arquivo exista?
+
+class MyException extends RuntimeException {
+}
+
+class A {
+    void m2() throws java.io.FileNotFoundException {
+        System.out.println("e");
+        new MyException();
+        System.out.println("f");
+    }
+
+    void m() throws java.io.FileNotFoundException {
+        System.out.println("c");
+        try {
+            m2();
+        } catch (java.io.FileNotFoundException ex) {
+        }
+        System.out.println("d");
+    }
+
+    public static void main(String[] args) throws java.io.IOException {
+        System.out.println("a");
+        new A().m();
+        System.out.println("b");
+    }
+
+a) Não compila. 
+b) Compila e imprime acefdb. 
+c) Compila e imprime ace e joga uma Exception. 
+d) Compila e imprime acedb e joga uma Exception. 
+e) Compila e imprime ace, joga uma Exception e imprime db.
+
+
+9 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir,
+sem que o arquivo exista?
+
+class MyException extends RuntimeException {
+}
+
+class A {
+    void m2() throws java.io.FileNotFoundException {
+        System.out.println("e");
+        throw new MyException();
+        System.out.println("f");
+    }
+
+    void m() throws java.io.FileNotFoundException {
+        System.out.println("c");
+        try {
+            m2();
+        } catch (java.io.FileNotFoundException ex) {
+        }
+        System.out.println("d");
+    }
+
+    public static void main(String[] args) throws java.io.IOException {
+        System.out.println("a");
+        new A().m();
+        System.out.println("b");
+    }
+
+a) Não compila. 
+b) Compila e imprime acefdb. 
+c) Compila e imprime ace e joga uma Exception. 
+d) Compila e imprime acedb e joga uma Exception. 
+e) Compila e imprime ace, joga uma Exception e imprime db.
+
+
+10 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir,
+sem que o arquivo exista?
+
+class MyException extends RuntimeException {
+}
+
+class A {
+    void m2() throws java.io.FileNotFoundException {
+        System.out.println("e");
+        boolean sim = true;
+        if (sim) throw new MyException();
+        System.out.println("f");
+    }
+
+    void m() throws java.io.FileNotFoundException {
+        System.out.println("c");
+        try {
+            m2();
+        } catch (java.io.FileNotFoundException ex) {
+        }
+        System.out.println("d");
+    }
+
+    public static void main(String[] args) throws java.io.IOException {
+        System.out.println("a");
+        new A().m();
+        System.out.println("b");
+    }
+
+a) Não compila. 
+b) Compila e imprime acefdb. 
+c) Compila e imprime ace e joga uma Exception. 
+d) Compila e imprime acedb e joga uma Exception. 
+e) Compila e imprime ace, joga uma Exception e imprime db.
+
+
+11 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir,
+sem que o arquivo exista?
+
+class MyException extends RuntimeException {
+}
+
+class A {
+    void m2() throws java.io.FileNotFoundException {
+        System.out.println("e");
+        boolean sim = true;
+        if (sim) throw new MyException();
+        System.out.println("f");
+    }
+
+    void m() throws java.io.FileNotFoundException {
+        System.out.println("c");
+        try {
+            m2();
+        } catch (java.io.FileNotFoundException ex) {
+        }
+        System.out.println("d");
+    }
+
+    public static void main(String[] args) throws java.io.IOException {
+        System.out.println("a");
+        new A().m();
+        System.out.println("b");
+    }
+}
+
+a) Não compila. 
+b) Compila e imprime acefdb. 
+c) Compila e imprime ace e joga uma Exception. 
+d) Compila e imprime acedb e joga uma Exception. 
+e) Compila e imprime ace, joga uma Exception e imprime db.
+
+
+10.5 Exercícios
+
+
+1 - Escolha a opção adequada que indica o Throwable que ocorrerá no código a seguir:
+
+class A {
+     public static void main(String[] args) {
+        main(args);
+    }
+}
+
+a) IndexOutOfBoundsException  
+b) ArrayIndexOutOfBoundsException  
+c) NullPointerException  
+d) OutOfMemoryError  
+e) StackOverflowError  
+f) ExceptionInInitializationError
+
+
+2 - Escolha a opção adequada que indica o Throwable que ocorrerá no código a seguir:
+
+import java.util.*;
+class A {
+     public static void main(String[] args) {
+         ArrayList<String> strings = new ArrayList<String>();
+         for(int i=0; i<10; i++)
+             for(int j=0; j<10; i++)
+                 strings.add("string " + i + " " + j);
+         System.out.println(strings.get(99999));
+     }
+}
+
+a) IndexOutOfBoundsException  
+b) ArrayIndexOutOfBoundsException  
+c) NullPointerException  
+d) OutOfMemoryError  
+e) StackOverflowError  
+f) ExceptionInInitializationError
+
+
+11.2 Exercícios
+
+
+1 - O que acontece ao tentar compilar e executar o código a seguir?
+
+class Test {
+    public static void main(String[] args) {
+        System.out.print("a");
+        System.out.println('b'); // A
+        System.out.print(); // B
+        System.out.println("c");
+    }
+}
+
+a) Compila e imprime
+ab
+c  
+b) Compila e imprime
+ab
+c  
+c) Compila e imprime
+a
+bc  
+d) Não compila por erro na linha A  
+e) Não compila por erro na linha B
+
+
+2 - Ao tentar compilar e executar o código a seguir, o que acontece?
+
+public class Test {
+    public static void main(String[] args) {
+        System.out.print("a");
+        System.out.println("b");
+        System.out.printf("c");
+        System.out.print("d");
+        System.out.println("\n");
+        System.out.print("e");
+    }
+}
+
+a) Compila e imprime
+ab
+cd
+e  
+b) Compila e imprime
+ab
+c
+d
+e  
+c) Compila e imprime
+ab
+cd
+e  
+d) Não compila
+
+
+3 - O que acontece ao compilar e executar o código a seguir?
+
+public class Test {
+    public static void main(String[] args) {
+        System.out.printf("%s", 12); // A
+        System.out.printf("%d", new Integer(321)); // B
+        System.out.printf("%d", (short)(byte)(double)127); // C
+    }
+}
+
+a) Erro de compilação na linha B  
+b) Erro de compilação nas linhas B e C  
+c) Compila e executa normalmente  
+d) Erro de compilação na linha C  
+e) Erro de compilação na linha A  
+
+
+4 - Qual dos códigos a seguir NÃO imprime >00012.45<? Escolha 1 alternativa:
+a) `System.out.printf(''>%0,8.2f<'', 12.45);`  
+b) `System.out.printf(''>%-(8.2f<'', 12.45);`  
+c) `System.out.format(''>%0(8.2f<'', 12.45);`  
+d) `System.out.format(''>%1$08.2f<'', 12.45);`  
+e) `System.out.printf(''>%0,(8.2f<'', 12.45);`
+
+
+5 - Ao tentar compilar e executar o seguinte código, o que é impresso?
+
+public class Testes {
+    public static void main(String[] args) {
+        System.out.println(new char[]{'a', 'b', 'c'}); // A
+        System.out.println(new byte[]{'a', 'b', 'c'}); // B
+        System.out.println("abc"); // C
+        System.out.println(new String[]{"abc"}); // D
+    }
+}
+
+a) Não compila na linha B  
+b) Linhas A e C imprimem abc  
+c) Linha C imprime abc  
+d) Linhas A, C e D imprimem abc  
+e) Todas as linhas imprimem abc
+
+
+11.3 Exercícios
+
+1 - Para aumentar o encapsulamento de uma classe, devemos:
+
+a) Deixar os métodos e atributos privados
+b) Deixar os métodos e atributos públicos
+c) Deixar os métodos públicos e atributos públicos
+d) Deixar os métodos públicos e atributos privados
+e) Deixar os métodos privados e atributos públicos
+
+
+12.1 Exercícios
+
+1 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    public static void main(String[] args) {
+        int i = 10;
+        m1(i);
+    }
+
+    private static void m1(Integer j) {
+        System.out.println("go!");
+    }
+}
+
+a) Erro de compilação  
+b) Imprime go!  
+c) Imprime 10  
+d) Compila mas lança exception  
+
+
+2 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    static int i;
+
+    public static void main(String[] args) {
+        i = Integer.parseInt("10");
+        m1(i + 1);
+    }
+
+    private static void m1(Integer j) {
+        System.out.println(i);
+    }
+}
+
+a) Erro de compilação  
+b) Imprime 11  
+c) Imprime 10  
+d) Compila mas lança exception  
+
+3 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+class A {
+    static int i;
+
+    public static void main(String[] args) {
+        i = Integer.valueOf("10");
+        m1(i + 1);
+    }
+
+    private static void m1(Integer j) {
+        System.out.println(j);
+    }
+}
+
+a) Imprime 10  
+b) Erro de compilação  
+c) Compila mas lança exception  
+d) Imprime 11  
+
+4 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+public class Test {
+    static long i;
+
+    public static void main(String[] args) {
+        i = Integer.valueOf("10", 8); // A
+        m1(i); // B
+    }
+
+    private static void m1(Integer j) { // C
+        System.out.println(j);
+    }
+}
+
+a) Imprime 10  
+b) Erro de compilação na linha A  
+c) Erro de compilação na linha B  
+d) Erro de compilação na linha C  
+e) Compila mas lança exception  
+
+5 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+public class Test {
+    public static void main(String[] args) {
+        int a = Short.parseShort("126"); // A
+        short s = Integer.parseInt("23").shortValue(); // B
+        double h = Double.valueOf("27").floatValue(); // C
+        System.out.println(a + s);
+    }
+}
+
+a) Imprime 149  
+b) Imprime 176  
+c) Erro de compilação na linha A  
+d) Erro de compilação na linha B  
+e) Erro de compilação na linha C  
+
+6 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+public class Test {
+    public static void main(String[] args) {
+        char c = new Character('x').charValue();
+        System.out.println(c);
+    }
+}
+
+a) Imprime x  
+b) Imprime 120  
+c) Erro de compilação  
+
+
+7 - Escolha a opção adequada ao tentar compilar e rodar o arquivo a seguir:
+
+public class Test {
+    public static void main(String[] args) {
+        int a = Integer.parseInt("10", 2);
+        int b = a == 10 ? null : 3;
+        System.out.println(a + b);
+    }
+}
+
+a) Imprime 13  
+b) Imprime 5  
+c) Imprime 10  
+d) Erro de compilação  
+e) Ao executar lança NullPointerException
+
+13.1 Exercícios
+
+1 - Todas as classes da nova API de datas são:
+
+a) imutáveis
+b) mutáveis
+
+
+2 - A classe que representa um horário sem data é:
+
+a) LocalDateTime
+b) TimeZone
+c) LocalTime
+d) Time
+
+
+3 - Qual código cria um objeto com a data e hora atual?
+a) LocalDate.now();
+b) LocalDateTime.now();
+c) LocalDateTime.current();
+d) new LocalDateTime();
+
+
+4 - Qual o código que calcula a diferença em dias entre dois LocalDate d1 e d2?
+
+a) ChronoUnit.Days.between(d1,d2);
+b) ChronoUnit.DAYS.difference(d1,d2);
+c) ChronoUnit.DAYS.between(d1,d2);
+d) Period.between(d1,d2);
+
+
+5. Qual o código que calcula a diferença em dias entre dois LocalDate d1 e d2?
+
+a) ChronoUnit.Days.between(d1,d2);
+b) ChronoUnit.DAYS.difference(d1,d2);
+c) ChronoUnit.DAYS.between(d1,d2);
+d) Period.between(d1,d2);
+
+6 - 
+LocalDate birthday = LocalDate.of(1975, 9, 23);
+LocalDate today = LocalTime.now();
+//code here
+   
+   System.out.println("You are " + d.getYears() + " years, " + 
+                     d.getMonths() + " months, and " + 
+                     d.getDays() + " days old.");
+   
+Qual trecho que, se inserido no local, indicado irá imprimir corretamente a idade?
+a) Period d = Period.between(birthday, today);
+b) Duration d = Duration.between(birthday, today);
+c) Period d = Period.between(today,birthday);
+d) Period d = Period.difference(birthday, today);
+
+7 - Qual o trecho de código que converte um objeto Date em um objeto LocalDate?
+a) LocalDate.from(d.toInstant());
+b) LocalDateTime.from(d.toInstant()).toLocalDate();
+c) LocalDateTime.ofInstant(d.toInstant()).toLocalDate();
+d) LocalDateTime.ofInstant(d.toInstant(), ZoneId.systemDefault()).toLocalDate();
+
+8 -
+System.out.println(YearMonth.now().isSupported(ChronoField.DAY_OF_MONTH));
+System.out.println(MonthDay.now().isSupported(ChronoUnit.DAYS));
+System.out.println(LocalDate.now().isSupported(ChronoUnit.DAYS));
+System.out.println(LocalDateTime.now().isSupported(ChronoField.DAY_OF_MONTH));
+Sobre o código, ao tentarmos compilar e executar, o que acontece?
+a) Compila e imprime false, true, true, true
+b) Compila e imprime true, true, true, true
+c) Compila e imprime true, true, false, true
+d) Compila, mas lança exception ao executar
+e) Não compila
+
+9 -
+System.out.println(YearMonth.now().isSupported(ChronoUnit.MONTHS));
+System.out.println(YearMonth.now().isSupported(ChronoUnit.DAY_OF_MONTH));
+System.out.println(MonthDay.now().isSupported(ChronoField.DAY_OF_MONTH));
+System.out.println(LocalDate.now().isSupported(ChronoUnit.DAYS));
+System.out.println(LocalDate.now().isSupported(ChronoUnit.YEAR));
+System.out.println(LocalDateTime.now().isSupported(ChronoField.HOUR_OF_AMPM));
+System.out.println(LocalDateTime.now().isSupported(ChronoField.YEAR));
+Sobre o código, ao tentarmos compilar e executar, o que acontece?
+a) Compila e imprime true, false, true, true, true, true, true, true
+b) Compila e imprime true, true, true, true, true, true, false, true
+c) Compila, mas lança exception ao executar
+d) Não compila
+
+13.2 Exercícios
+
+
+1 -
+
+class A {
+    public static void main(String[] args) {
+        Printer p = null;
+        // code here
+        p.printMessage();
+    }
+}
+
+interface Printer {
+    void printMessage();
+}
+
+Qual código, se incluído na linha indicada, imprime a mensagem “Hello World”?
+
+a) `p = () -> System.out.println("Hello World");`  
+b) `p = () => System.out.println("Hello World");`  
+c) `p = -> System.out.println("Hello World");`  
+d) `p -> System.out.println("Hello World");`
+
+
+2 - Qual das expressões a seguir é inválida?
+
+a) `Predicate<List> bigger = list -> list.size() > 1000;`  
+b) `Predicate<String> startsWithA = s -> s.startsWith("A");`  
+c) `Predicate big = list -> list.size() > 100;`  
+d) `String name=""; Predicate isEmpty = s -> s.equals("");`
+
+
+3 - Considere a seguinte interface:
+
+interface Calculator<T> {
+    T function(T a, T b);
+}
+
+Qual dos códigos a seguir não é válido?
+
+a) `Calculator<Integer> sum = (a,b) -> a + b;`  
+b) `Calculator<Integer> multiply = (Integer a, Integer b) -> (int) a * b;`  
+c) `Calculator<Integer> subtract = (a,b) -> {return a - b;};`  
+d) `Calculator<Integer> divide = (int a, int b) -> {return (Integer) a / b;};`
+
+
+4 - Escolha a opção adequada ao tentar compilar e rodar o arquivo:
+
+class A {
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            new Thread(() -> System.out.println(i)).start();
+        }
+    }
+}
+
+a) Imprime 0 dez vezes  
+b) Imprime os números de 0 a 9  
+c) Compila e executa, mas não imprime nada  
+d) Erro de compilação  
+
+
+5 - Escolha a opção adequada ao tentar compilar e rodar o arquivo:
+
+class A {
+    int a = 0;
+
+    public static void main(String[] args) {
+        new A().method(1, a -> a > 0); // A
+    }
+
+    private void method(int a, Predicate<Integer> d) {
+        if (d.test(a)) { // B
+            System.out.println(a);
+        }
+    }
+}
+
+a) Compila e imprime 0  
+b) Compila e imprime 1  
+c) Compila e não imprime nada  
+d) Não compila por erro na linha A  
+e) Não compila por erro na linha B  
+
+
+6 - Escolha a opção adequada ao tentar compilar e rodar o arquivo:
+
+class A {
+    int a = 0;
+
+    public static void main(String[] args) {
+        new A().method(1);
+    }
+
+    private void method(int a) {
+        Predicate<Integer> d = a -> a > 0; // A
+        if (d.test(a)) { // B
+            System.out.println(a);
+        }
+    }
+}
+
+a) Compila e não imprime nada  
+b) Compila e imprime 1  
+c) Compila e imprime 0  
+d) Não compila por erro na linha A  
+e) Não compila por erro na linha B
