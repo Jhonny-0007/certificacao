@@ -1,0 +1,33 @@
+ass.Jhonny
+
+3.1 Repostas 
+
+
+1 - a, erro ao tentar chamar a váriavels i fora do bloco. (Correta)
+
+2 - Dúvida entre a e d, não sei se o código compila e roda a primera linha do for. (A resposta certa e a letra a, porque a variável i não poder ser chamada fora do for e a única linha que compila e a primeira)
+
+3 - c, compila porque a váriavel i e declarada dentro do bloco e depois e declarada novamente fora do bloco.
+
+4 - c, não compila porque a váriavel x não está sendo declarada. (Certo), motivo certo(Da erro de compilacão porque tentamos  chamar a váriavel x que é um array de String para um int)
+
+5 - d, compila porque está chamando a variável teste está sendo declarada da forma correta. (Certo)
+
+
+
+3.2 Respostas
+
+1 - a, não compila porque tem um importe no meio do código. (Correta), motivo(Não podemos ter um import após uma definição de um classe)
+
+2 - e, compila e não imprime nada porque estamos chamando um método. (Correta)
+
+3 - c, não tem nenhuma irregularidade. (Correta)
+
+4 - e, mas estou com dúvida para saber se compila pelo fato de D extends A, implements B. (Errada) Não podemos coloca uma vírgula depois do extends e pelo fato do arquivo se chamar A.java, o único tipo público que pode existir dentro dele deve se chamar A.
+
+
+3.3 Respostas
+
+
+
+
