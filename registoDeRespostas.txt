@@ -28,6 +28,73 @@ ass.Jhonny
 
 3.3 Respostas
 
+1 - a (Certa)
+
+2 - c (Errada)
+
+3 - b (Errada)
+
+4 - d (Errada)
+
+5 - a (Errada)
+
+3.4 Respostas
+
+1 - b, o método não tem um retorno. (Errada)
+
+2 - a (Certo)
+
+3 - c (Certo)
+
+4 - c (Certo)
+
+5 - g, estão em classes diferentes. (Errada), prestar mais atenção.
+
+6 - d (Certo)
+
+7 - d (Errado), Não importou a classe A, somente foram importados os membros.
+
+8 - d (Errado), não se escreve import static e sim static import
+
+9 - a (Certa), motio errado.
+
+
+4.1 Repostas
+
+1 - d (Certa)
+
+2 - a (Certa)
+
+3 - a (Errada) Prestar mais atenção, se tiver o else e a variável for iniciada no if está correto.
+
+4 - f (Certo) 
+
+5 - a (Errada), a variável boolean sempre vai inicar com false
+
+6 - e (Errada), um boolean só pode ser false ou true
+
+7 - d (Errada), o 09 octal não existe
+ 
+8 - a (Errada), caracteres são números em java
+
+9 - a (Errada), instanceOf não é uma palavra reservada. Nenhuma palavra reservada tem letra maiúscula no meio dela.
+
+10 - d (Certa)
+
+
+4.2 Respostas
+
+1 - e (Certo)
+
+2 - c (Errada), prestar atenção.
+
+
+4.3 Repostas
+
+1 - a (Errado)
+
+
+4.4
 
 
 
