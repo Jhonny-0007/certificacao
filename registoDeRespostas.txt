@@ -94,7 +94,113 @@ ass.Jhonny
 1 - a (Errado)
 
 
-4.4
+4.4 Respostas
+
+1 - a  (Errado), não tem erro em criar um objeto B b;
+
+2 - b (Certa)
+
+3 - a (Errada)
 
 
+4.5 Respostas
 
+1 - a (Errada) O código compila e devido à regra de sempre invocar o mais específico, ele sempre invoca o método sem argumentos. Portanto, o resultado é vazio/vazio.  A ordem de
+definição de métodos não importa para a invocação. 
+
+2 - c (Certa)
+
+3 -  b (Errada), Você está passando um array de inteiros como argumento para o varargs. Em Java, quando você passa um array para um varargs, ele é tratado como se você tivesse passado cada elemento do array como um argumento separado.
+
+4 - e (Certa)
+
+
+4.6 Respostas
+
+
+1 - c (Errada),  O array começa na posição 0, portanto, o primeiro caractere removido se encontra na posição 2, o i. Ele remove
+todos os caracteres até a posição 3, exceto o da posição 3, portanto somente o i é removido.
+
+2 - g (Errada), Os dois métodos retornam -1 quando não encontram nada, portanto, o segundo resultado é -2. Como a posição
+começa em 0, o resultado das letras e são 5 e 8, totalizando 13.
+
+
+4.7 Respostas
+
+1 - d (Errada), burrice
+
+2 - a (Errada), não dá para chamar null em isEmpty
+
+3 - c (Errada), não compila porque a variável não foi iniciada
+
+4 - b (Errada), .concat não modifica a String
+
+5 - e (Certo)
+
+6 - d (Errada), a String não foi inicializada
+
+7 - b (Certo)
+
+8 - e (Certo)
+
+9 - c (Errada), da um NullPointerException quando tentamos criar a segunda String
+
+10 - b (Errada), compila e imprime uda
+
+11 - c (Errada),  Não compila pois String possui diversos construtores que recebem um argumento
+
+12 - c (Certo), Nenhuma das alternativas dadas com número,
+pois primeiro ele soma val e div, imprimindo 14. A conta de divisão
+é feita entre int, devolvendo um int de valor 2. Quando esse número
+é atribuído a um double, continua sendo 2. Portanto, imprime 14 e
+2.0.
+
+13 - c (Errada), s.replace("e", ’a’);
+
+14 - a (Certo)
+
+
+5.1 Resposatas
+
+1 - b (Certo)
+
+2 - b (Certo)
+
+3 - d (Certo)
+
+4 - a (Errado)
+
+5 - não sabia (Errada), letra correta e a d ^
+
+6 - null, infinito, infinito, infinito negativo (Certo)
+
+7 - f (Errada), for não tem certeza se a variável vai ser iniciada
+
+8 - e (Errada), Não compila a linha 6 pois “1.0” é double e não pode ser colocado
+em um float
+
+9 - e (Certa)
+
+1 - Não compila (Certo)
+
+2 - c (Certo)
+
+3 - c (Certo)
+
+4 - d (Errada)
+
+5 - 3 (Certa)
+
+6 - 4 () 
+
+7 - c (Errada)
+
+8 - c (Certa)
+
+9 - f (Certa)
+
+10 - b (Certa)
+
+11 - c (Certa)
+
+12 - a (Certa)
