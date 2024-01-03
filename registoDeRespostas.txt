@@ -160,7 +160,7 @@ pois primeiro ele soma val e div, imprimindo 14. A conta de divisão
 14 - a (Certo)
 
 
-5.1 Resposatas
+5.1 Respostas
 
 1 - b (Certo)
 
@@ -204,3 +204,72 @@ em um float
 11 - c (Certa)
 
 12 - a (Certa)
+
+
+5.2 Respostas
+
+1 - b (Errada) String result = ("dvision: " + 15) / 0.0; Isso nem compila.
+
+2 - b (Certa)
+
+
+5.3 Respostas
+
+1 - d (Errada), Não foi criado uma nova String na s2
+
+2 - e (Errada), prestar mais atenção
+
+3 - c (Certa)
+
+4 - c (Errada), As duas referências são diferentes (false), e o método equals não foi sobrescrito
+(true).
+
+
+5 - e (Errada), O código não compila pois D não é do tipo C
+
+
+5.4
+
+1 - c 
+
+2 - c (Errada), cai na pegadinha
+
+3 - a (Certa)
+
+4 - b (Errada), prestar mais atenção
+
+5 - d (Errada), burrice
+
+
+5.5
+
+1 - d (Certa)
+
+2 - c (Errada)
+
+3 - a (Errada), burrice
+
+4 - b (Errada), Burrice
+
+5 - b (Errada), entender melhor
+
+6 - a (Certa)
+
+
+6.1 
+
+1 - e (Certa)
+
+2 - a (Errada),  ou você passa o tamanho, ou passa os valores.
+
+3 - c (Errada), detalhe
+
+4 - b (Errada), 
+
+5 - c (Errada)
+
+6 - j (Errada)
+
+7 - d (Certa)
+
+8 - a,b,c,d,j (Errada)
