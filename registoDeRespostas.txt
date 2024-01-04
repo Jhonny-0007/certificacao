@@ -273,3 +273,57 @@ em um float
 7 - d (Certa)
 
 8 - a,b,c,d,j (Errada)
+
+
+6.2 Respostas
+
+1 - a (Certa)
+
+2 - b (Errada), foco
+
+3 - g (Certa)
+
+4 - a (Certa)
+
+
+6.3 Respostas
+
+1 - a (Certa)
+
+2 - e (Errada), não imprime false, imprime true porque quer dizer que existe e foi removido
+
+3 - f (Certa)
+
+4 - h (Certa)
+
+5 - a (Certa)
+
+6 - b (Certa)
+
+7 - a (Certa)
+
+8 - b (Certa) 
+
+9 - b (Errada), a mudança só vale dentro do for.
+
+
+7.1 Respostas
+
+1 - vi a resposta sem querer, e contem pegadinha
+
+2 - c, dúvida nessa questão, Duas respostas certas?
+
+
+7.2 Repostas
+
+1 - b (Errada), se o for
+
+2 - b (Errada)
+
+3 - a  (Certa)
+
+4 - b (Errada)
+
+5 - a (Certa)
+
+6 - d (Errada)
