@@ -14,7 +14,6 @@ ass.Jhonny
 5 - d, compila porque está chamando a variável teste está sendo declarada da forma correta. (Certo)
 
 
-
 3.2 Respostas
 
 1 - a, não compila porque tem um importe no meio do código. (Correta), motivo(Não podemos ter um import após uma definição de um classe)
@@ -327,3 +326,86 @@ em um float
 5 - a (Certa)
 
 6 - d (Errada)
+
+
+7.3 Respostas
+
+1 - b (Certa)
+
+2 - d (Errada)
+
+3 - c (Certa)
+
+4 - a (Certa)
+
+5 - a (Errada), do; while(i++<10); compila e sai
+
+
+7.4 Repostas
+
+1 - a (Certa)
+
+2 - a (Certa)
+
+3 - b (Certa)
+
+4 - d (Certa)
+
+5 - b (Certa)
+
+
+7.5 Repostas
+
+1 - b (Errada) o último if não encherga a variável 'a' então da erro de compilacão
+
+2 - d (Certa)
+
+3 - b (errada), bobeira
+
+
+8.1 Respostas
+
+1 - a (Certa)
+
+2 - a (Certa)
+
+3 - b (Certa)
+
+4 - a (Certa)
+
+
+8.2 Respostas
+
+1 - a (Certa)
+
+2 - b (Certa)
+
+3 - a (Errada)
+
+4 - a (Certa)
+
+5 - b (Certa)
+
+
+8.3 Respostas
+
+1 - a (Certa)
+
+2 - c (Certa)
+
+3 - a (Certa)
+
+4 - b (Errada), os metódos tem que ser estáticos
+
+5 - d (Certa)
+
+6 - b (Certa)
+
+7 - d (Errada), váriaveis com o mesmo nome
+
+8 - b (Certa) 
+
+
+8.4 Repostas
+
+1 - 
