@@ -1,6 +1,6 @@
 ass.Jhonny
 
-3.1 Repostas 
+3.1 Respostas 
 
 
 1 - a, erro ao tentar chamar a váriavels i fora do bloco. (Correta)
@@ -58,7 +58,7 @@ ass.Jhonny
 9 - a (Certa), motio errado.
 
 
-4.1 Repostas
+4.1 Respostas
 
 1 - d (Certa)
 
@@ -88,7 +88,7 @@ ass.Jhonny
 2 - c (Errada), prestar atenção.
 
 
-4.3 Repostas
+4.3 Respostas
 
 1 - a (Errado)
 
@@ -313,7 +313,7 @@ em um float
 2 - c, dúvida nessa questão, Duas respostas certas?
 
 
-7.2 Repostas
+7.2 Respostas
 
 1 - b (Errada), se o for
 
@@ -341,7 +341,7 @@ em um float
 5 - a (Errada), do; while(i++<10); compila e sai
 
 
-7.4 Repostas
+7.4 Respostas
 
 1 - a (Certa)
 
@@ -354,7 +354,7 @@ em um float
 5 - b (Certa)
 
 
-7.5 Repostas
+7.5 Respostas
 
 1 - b (Errada) o último if não encherga a variável 'a' então da erro de compilacão
 
@@ -406,7 +406,7 @@ em um float
 8 - b (Certa) 
 
 
-8.4 Repostas
+8.4 Respostas
 
 1 - b (Errada)
 
@@ -441,7 +441,47 @@ em um float
 7 - d (Errada)
 
 
-8.7 Repostas
+8.7 Respostas
 
-1 - 
+1 - c
 
+2 - a 
+
+3 - a 
+
+4 - c 
+
+5 - a 
+
+
+8.8 Respostas
+
+1 - c
+
+2 - a 
+
+
+9.1 Respostas
+
+1 - compila
+
+2 - não compila
+
+3 - b 
+
+4 - a (Certa)
+
+5 - a 
+
+6 - c 
+
+7 - a (Certa)
+
+8 - b (Certa)
+
+
+9.2 Repostas
+
+1 - a 
+
+2 - b
