@@ -482,6 +482,118 @@ em um float
 
 9.2 Repostas
 
-1 - a 
+1 - a (Certa)
 
-2 - b
+2 - c 
+
+3 - c (Certa)
+
+4 - e 
+
+5 - b 
+
+6 - a 
+
+7 - b 
+
+8 - b (Certa)
+
+9 - d 
+
+
+9.3 Respostas
+
+1 - b 
+
+2 - c 
+
+3 - a 
+
+4 - b 
+
+5 - c 
+
+6 - d 
+
+7 - a
+
+8 - c 
+
+9 - compila
+
+
+9.4 Repostas
+
+1 - c
+
+2 - b 
+
+3 - a 
+
+4 - c 
+
+5 - d 
+
+6 - b 
+
+7 - b 
+
+8 - c 
+
+9 - e 
+
+
+9.5 Respostas
+
+1 - c (Certa)
+
+2 - b 
+
+3 - c 
+
+4 - a (Certa)
+
+5 - a (Certa)
+
+6 - a (Certa)
+
+7 - c (Certa)
+
+8 - d 
+
+9 - c 
+
+10 - b (Certa)
+
+
+9.6 Respostas
+
+1 - c (Certa)
+
+2 - a (Certa)
+
+3 - d 
+
+4 - b (Certa)
+
+5 - a (Certa)
+
+6 - b 
+
+
+10.1 Repostas
+
+1 - d (Certa)
+
+
+10.2 Repostas
+
+1 - b, d (meio certa)
+
+2 - a, e (meio certa)
+
+
+10.3 Repostas
+
+
+
