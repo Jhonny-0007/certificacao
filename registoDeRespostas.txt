@@ -632,3 +632,9 @@ em um float
 1 - b (Errada)
 
 2 - a  (Errada)
+
+
+11.1 Sem perguntas
+
+
+11.2 - 
