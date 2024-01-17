@@ -1,0 +1,43 @@
+1 - c (Errada)
+
+2 - c (Certa)
+
+3 - c (Errada)
+
+4 - d (Certa)
+
+5 - b (Errada)
+
+6 - d (Certa)
+
+7 - b (Errada)
+
+8 - a (Errada)
+
+9 - d  (Certa)
+
+10 - c (Certa)
+
+11 - d (Certa)
+
+12 - c (Certa)
+
+13 - c (Certa)
+
+14 - b (Certa)
+
+15 - c (Errada)
+
+16 - d (Errada)
+
+17 - b (Certa)
+
+18 - b (Errada)
+
+19 - a (Certa)
+
+20 - c (Errada)
+
+21 - a (Errada)
+
+22 - c (Errada)
