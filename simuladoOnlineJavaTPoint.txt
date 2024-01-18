@@ -41,3 +41,59 @@
 21 - a (Errada)
 
 22 - c (Errada)
+
+23 - a (Errada)
+
+24 - c (Certa)
+
+25 - d (Errada)
+
+26 - c (Certa)
+
+27 - d (Errada)
+
+28 - a (Errada)
+
+29 - c (Errada)
+
+30 - b (Certa)
+
+31 - c (Errada)
+
+32 - c (Certa)
+
+33 - a (Errada)
+
+34 - c (Certa)
+
+35 - b (Errada)
+
+36 - a (Certa)
+
+37 - c (Certa)
+
+38 - c (Errada)
+
+39 - d (Certa)
+
+40 - c (Errada)
+
+41 - c (Errada)
+
+42 - d (Certa)
+
+43 - a (Errada)
+
+44 - c (Errada)
+
+45 - d (Errada)
+
+46 - b (Certa)
+
+47 - c (Certa)
+
+48 - d (Certa)
+
+49 - c (Errada)
+
+50 - a (Errada)
