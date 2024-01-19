@@ -1,0 +1,133 @@
+3.1 
+
+1 - a (Certa)
+
+2 - a (Certa)
+
+3 - c (Certa)
+
+4 - a (Errada)
+
+5 - d (Certa)
+
+
+3.2
+
+1 - a (Certa)
+
+2 - a (Errada)
+
+3 - c (Certa)
+
+4 - b (Errada)
+
+
+3.3 
+
+1 - a (Certa)
+
+2 - e (Errada)
+
+3 - c (Certa)
+
+4 - d (Errada)
+
+5 - h (Certa)
+
+
+3.4 
+
+1 - b (Errada)
+
+2 - a (Certa)
+
+3 - a (Errada)
+
+4 - c (Certa)
+
+5 - e (Certa)
+
+6 - d (Certa)
+
+7 - a (Errada)
+
+8 - a (Certa)
+
+9 - a (Certa)
+
+
+4.1 
+
+1 - d (Certa)
+
+2 - a (Certa)
+
+3 - d (Certa)
+
+4 - f (Certa)
+
+5 - b (Certa)
+
+6 - f (Errada)
+
+7 - d (Errada)
+
+8 - a (Errada)
+
+9 - e (Certa)
+
+10 - d (Certa)
+
+
+4.2 
+
+1 - e (Certa)
+
+2 - f (Certa)
+
+
+4.3
+
+1 - d (Certa)
+
+
+4.4 
+
+1 - a (Errada)
+
+2 - b (Certa)
+
+3 - a (Errada)
+
+
+4.5 
+
+1 - b (Certa)
+
+2 - b (Errada)
+
+3 - e (Certa)
+
+4 - e (Certa)
+
+
+4.6 
+
+1 - c (Errada)
+
+2 - a (Certa)
+
+
+4.7 
+
+1 - c
+
+2 - d 
+
+3 - a 
+
+4 - a 
+
+5 - e 
+
+6 - b 
