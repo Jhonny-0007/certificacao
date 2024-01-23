@@ -124,10 +124,190 @@
 
 2 - d 
 
+3 - a (Certa)
+
+4 - a (Certa)
+
+5 - e (Certa)
+
+6 - b (Certa)
+
+
+5.1 
+
+1 - b (Certa)
+
+2 - b (Certa)
+
 3 - a 
+
+4 - d (Certa)
+
+5 - b 
+
+6 -  Exception, imprime infinito, infinito e negativo infinito (Certa)
+
+7 - b (Certa)
+
+8 - d (Certa)
+
+9 - e (Certa)
+
+10 - Não compila (Certa)
+
+11 - b 
+
+12 - c (Certa)
+
+13 - d 
+
+14 - 3 (Certa)
+
+15 - d 
+
+16 - a 
+
+17 - e 
+
+18 - c
+
+19 - b (Certa)
+
+20 - c (Certa)
+
+21 - a (Certa)
+
+
+5.2 
+
+1 - a (Certa)
+
+2 - b (Certa)
+
+
+5.3
+
+1 - d 
+
+2 - e 
+
+3 - c (Certa)
+
+4 - e (Certa)
+
+5 - a (Certa)
+
+
+5.4 
+
+1 - c (Certa)
+
+2 - a (Certa)
+
+3 - a (Certa)
+
+4 - a (Certa)
+
+5 - b (Certa)
+
+
+5.5 
+
+1 - a 
+
+2 - c 
+
+3 - b (Certa)
+
+4 - a (Certa)
+
+5 - b 
+
+6 - c 
+
+
+6.1 
+
+
+1 - e (Certa)
+
+2 - b (Certa)
+
+3 - c 
 
 4 - a 
 
-5 - e 
+5 - i  
 
-6 - b 
+6 - e 
+
+7 - c 
+
+8 - a, b, f, (Meio certo)
+
+
+6.2 
+
+1 - a (Certa)
+
+2 - f (Certa)
+
+3 - g (Certa)
+
+4 - a (Certa)
+
+
+6.3
+
+1 - a (Certa) 
+
+2 - d (Certa)
+
+3 - f (Certa)
+
+4 - h (Certa)
+
+5 - a (Certa)
+
+6 - b (Certa)
+
+7 - a (Certa)
+
+8 - a (Errei)
+
+9 - c (Certa)
+
+
+7.1
+
+1 - b (Errada)
+
+2 - c (Certa)
+
+
+7.2 
+
+1 - a (Certa)
+
+2 - b 
+
+3 - a (Certa)
+
+4 - b (Certa)
+
+5 - a (Certa)
+
+6 - d 
+
+
+7.3 
+
+1 - b (Certa)
+
+2 - b (Certa)
+
+3 - d 
+
+4 - c 
+
+5 - c (Certa)
