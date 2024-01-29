@@ -1,0 +1,40 @@
+3.1
+
+1 - a (Certa)
+
+2 - a (Certa)
+
+3 - c (Certa)
+
+4 - a 
+
+5 - d (Certa)
+
+
+3.2
+
+1 - a (Certa)
+
+2 - b 
+
+3 - c (Certa)
+
+4 - b 
+
+
+3.3
+
+1 - a (Certa)
+
+2 - d (Certa)
+
+3 - c (Certa)
+
+4 - f (Certa)
+
+5 - h (Certa)
+
+
+3.4 
+
+1 - 
