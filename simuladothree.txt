@@ -37,4 +37,73 @@
 
 3.4 
 
-1 - 
+1 - d 
+
+2 - d 
+
+3 - c (Certa)
+
+4 - a 
+
+5 - e (Certa)
+
+6 - d (Certa)
+
+7 - d 
+
+8 - a (Certa)
+
+9 - b (Certa)
+
+
+4.1
+
+1 - d (Certa)
+
+2 - d 
+
+3 - c 
+
+4 - f (Certa)
+
+5 - a
+
+6 - e 
+
+7 - a (Certa)
+
+8 - c (Certa)
+
+9 - e (Certa)
+
+10 - d (Certa)
+
+
+4.2 
+
+1 - e (Certa)
+
+2 - f (Certa)
+
+
+4.3
+
+1 - d (Certa)
+
+
+4.4 
+
+1 - c (Certa)
+
+2 - c 
+
+3 - b (Certa)
+
+
+4.5
+
+1 - b 
+
+2 - c
+
+3 - 
