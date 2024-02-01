@@ -102,8 +102,102 @@
 
 4.5
 
-1 - b 
+1 - b (Certa)
 
-2 - c
+2 - c (Certa)
 
-3 - 
+3 - e (Certa)
+
+4 - e (Certa)
+
+
+4.6
+
+1 - e (Certa)
+
+2 - a (Certa)
+
+
+4.7
+
+1 - c
+
+2 - c 
+
+3 - c 
+
+4 - a (Certa) 
+
+5 - e (Certa)
+
+6 - b (Certa)
+
+7 - b (Certa)
+
+8 - e (Certa)
+
+9 - c 
+
+10 - c (Certa)
+
+11 - c 
+
+12 - c (Certa)
+
+13 - c 
+
+14 - c 
+
+
+5.1 
+
+1 - b (Certa)
+
+2 - b (Certa)
+
+3 - c (Certa)
+
+4 - i 
+
+5 - a 
+
+6 - error, infinito, initito, infinito negativo (Certa)
+
+7 - e 
+
+8 - e 
+
+9 - e (Certa)
+
+1 - compila 
+
+2 - c (Certa)
+
+3 - c (Certa)
+
+4 - d 
+
+5 - c imprime 3 (Certa)
+
+7 - d 
+
+8 - c (Certa)
+
+9 - e 
+
+10 - b (Certa)
+
+11 - c (Certa)
+
+12 - a (Certa)
+
+
+5.2
+
+1 - a (Certa)
+
+2 - b (Certa)
+
+
+5.3
+
