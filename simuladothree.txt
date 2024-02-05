@@ -261,4 +261,95 @@
 
 6.2 
 
-1 - 
+1 - a  (Certa) 
+
+2 - f (Certa)
+
+3 - g (Certa)
+
+4 - a (Certa)
+
+
+6.3 
+
+1 - a (Certa)
+
+2 - d (Certa)
+
+3 - f (Certa)
+
+4 - h (Certa)
+
+5 - a (Certa)
+
+6 - b (Certa)
+
+7 - a (Certa)
+
+8 - e 
+
+9 - c (Certa)
+
+
+7.1 
+
+1 - e (Certa)
+
+2 - c (Certa)
+
+
+7.2
+
+1 - a (Certa)
+
+2 - a (Certa)
+
+3 - a (Certa)
+
+4 - b (Certa)
+
+5 - a (Certa)
+
+6 - e (Certa)
+
+
+7.3
+
+1 - b (Certa)
+
+2 - b (Certa)
+
+3 - e 
+
+4 - a (Certa)
+
+5 - c (Certa)
+
+
+7.4
+
+1 - a (Certa) 
+
+2 - a (Certa)
+
+3 - b (Certa)
+
+4 - d (Certa)
+
+5 - b (Certa)
+
+
+7.5 
+
+1 - f 
+
+2 - d (Certa)
+
+3 - d 
+
+
+8.1 
+
+1 - a 
+
+2 - 
