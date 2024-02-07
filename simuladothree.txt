@@ -350,6 +350,146 @@
 
 8.1 
 
-1 - a 
+1 - a (Certa)
 
-2 - 
+2 - b 
+
+3 - b (Certa)
+
+4 - a (Certa)
+
+
+8.2
+
+1 - a (Certa)
+
+2 - b (Certa)
+
+3 - d (Certa)
+
+4 - a (Certa)
+
+5 - b (Certa)
+
+
+8.3 
+
+1 - a (Certa)
+
+2 - c (Certa)
+
+3 - a (Certa)
+
+4 - a (Certa)
+
+5 - d (Certa)
+
+6 - b (Certa)
+
+7 - a (Certa)
+
+8 - b (Certa)
+
+
+8.4
+
+1 - d (Certa) 
+
+
+8.5 
+
+1 - c 
+
+2 - d (Certa)
+
+3 - a 
+
+4 - f (Certa)
+
+5 - b 
+
+
+8.6 
+
+1 - d 
+
+2 - b (Certa)
+
+3 - b (Certa)
+
+4 - a (Certa)
+
+5 - c 
+
+6 - a (Certa)
+
+7 - c 
+
+
+8.7 
+
+1 - c 
+
+2 - c (Certa)
+
+3 - a 
+
+4 - c 
+
+5 - b 
+
+
+8.8
+
+1 - a (Certa)
+
+2 - d 
+
+
+9.1 
+
+1 - compila (Certa)
+
+2 - compila (Certa)
+
+3 - b  
+
+4 - a (Certa)
+
+5 - c (Certa)
+
+6 - d 
+
+7 - b 
+
+8 - a 
+
+
+9.2
+
+1 - a (Certa)
+
+2 - b (Certa)
+
+3 - c (Certa)
+
+4 - d 
+
+5 - b 
+
+6 - d (Certa)
+
+7 - a 
+
+8 - b (Certa)
+
+9 - f 
+
+
+9.3
+
+1 - c
+
+2 - b
+
+3 - 
