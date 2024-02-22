@@ -1,0 +1,207 @@
+3.1
+
+1 - a (Certa)
+
+2 - a (Certa)
+
+3 - c (Certa)
+
+4 - c (Certa)
+
+5 - d (Certa)
+
+
+3.2
+
+1 - a (Certa)
+
+2 - b 
+
+3 - c (Certa)
+
+4 - d (Certa)
+
+
+3.3
+
+
+1 - a (Certa)
+
+2 - d (Certa)
+
+3 - c (Certa)
+
+4 - d 
+
+5 - h (Certa)
+
+
+3.4
+
+
+1 - d 
+
+2 - d 
+
+3 - c (Certa)
+
+4 - c (Certa)
+
+5 - e (Certa)
+
+6 - d (Certa)
+
+7 - d 
+
+8 - d
+
+9 - b 
+
+
+
+4.1
+
+
+1 - d (Certa)
+
+2 - c 
+
+3 - c 
+
+4 - f (Certa)
+
+5 - b (Certa)
+
+6 - b (Certa)
+
+7 - d 
+
+8 - c (Certa)
+
+9 - e (Certa)
+
+10 - d (Certa)
+
+
+4.2
+
+
+1 - e (Certa)
+
+2 - f (Certa)
+
+
+4.3
+
+
+1 - d (Certa)
+
+
+4.4
+
+1 - c (Certa)
+
+2 - b (Certa)
+
+3 - b (Certa)
+
+
+4.5
+
+1 - c 
+
+2 - c (Certa)
+
+3 - e (Certa)
+
+4 - e (Certa)
+
+
+4.6 
+
+1 - e (Certa)
+
+2 - a (Certa)
+
+
+4.7 
+
+1 - d 
+
+2 - a 
+
+3 - d 
+
+4 - a (Certa)
+
+5 - e (Certa)
+
+6 - b (Certa)
+
+7 - b (Certa)
+
+8 - e (Certa)
+
+9 - a 
+
+10 - c (Certa)
+
+11 - a (Certa)
+
+12 - c (Certa)
+
+13 - c 
+
+14 - c 
+
+
+5.1 
+
+1 - b (Certa)
+
+2 - b (Certa)
+
+3 - c 
+
+4 - a 
+
+5 - d (Certa)
+
+6 - não compila, infinito, infinito, infinito negativo (Certa)
+
+7 - e 
+
+8 - e
+
+9 - e (Certa)
+
+1 - compila
+
+2 - b 
+
+3 - c 
+
+4 - d 
+
+5 - 3 (Certa)
+
+6 - 3 (Certa)
+
+7 - d 
+
+8 - c (Certa)
+
+9 - f (Certa)
+
+10 - b (Certa)
+
+11 - c (Certa)
+
+12 - a (Certa)
+
+
+5.2
+
+1 - a (Certa)
+
+2 - b (Certa)
