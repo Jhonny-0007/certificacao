@@ -556,3 +556,95 @@
 8 - b 
 
 9 - c 
+
+
+9.5 
+
+1 - c (Certa)
+
+2 - a (Certa)
+
+3 - b 
+
+4 - c 
+
+5 - a (Certa)
+
+6 - a (Certa)
+
+7 - a 
+
+8 - c (Certa)
+
+9 - b 
+
+10 - c 
+
+
+9.6 
+
+1 - b 
+
+2 - a (Certa)
+
+3 - d 
+
+4 - c 
+
+5 - a (Certa)
+
+6 - c (Certa)
+
+
+10.1 
+
+1 - d (Certa)
+
+
+10.2
+
+1 - b, d 
+
+2 - c, d 
+
+
+10.3
+
+1 - a (Certa)
+
+2 - c (Certa)
+
+3 - c (Certa)
+
+
+10.4
+
+1 - e 
+
+2 - b (Certa)
+
+3 - c (Certa)
+
+4 - c 
+
+5 - b 
+
+6 - b 
+
+7 - d 
+
+8 - a 
+
+9 - e 
+
+10 - b
+
+11 - a 
+
+
+
+10.5 
+
+1 - f
+
+2 - 
